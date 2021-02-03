@@ -17,7 +17,10 @@ struct MyChatApp: App {
     
     @Environment(\.managedObjectContext) private var viewContext
     
-
+    init() {
+        
+    }
+    
     
     let RandomId : String = "\(UIDevice.current.identifierForVendor!.uuidString)"
     // create MQTT Client Configuration with mandatory prameters
@@ -28,11 +31,16 @@ struct MyChatApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                
+                .onAppear(){
+                    
+                    
+                    
+                }
         }
         
         
     }
+    
     
 }
 

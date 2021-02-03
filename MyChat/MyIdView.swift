@@ -24,7 +24,7 @@ func generateQRCode(from string: String) -> UIImage {
 }
 
 struct MyIdView: View {
-    
+    var id : String
     
     var body: some View {
         VStack{
@@ -46,7 +46,7 @@ struct MyIdView: View {
 
 struct MyIDView_Previews: PreviewProvider {
     static var previews: some View {
-        MyIdView()
+        MyIdView(id: UUID().uuidString)
             .preferredColorScheme(.light)
     }
 }
