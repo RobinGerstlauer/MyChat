@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CoreImage.CIFilterBuiltins
-
+let info = MyInfo()
 let context = CIContext()
 let filter = CIFilter.qrCodeGenerator()
 //Function to Scale up a Generated code
@@ -24,7 +24,7 @@ func generateQRCode(from string: String) -> UIImage {
 }
 
 struct MyIdView: View {
-    var id : String
+    
     
     var body: some View {
         VStack{
@@ -32,7 +32,8 @@ struct MyIdView: View {
             Text("My ID")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding()
-            Image(uiImage: generateQRCode(from: "In here will be your PGP key"))
+            Text(info.getFileContent(fileName: "MyInfo.txt"))
+            Image(uiImage: generateQRCode(from: info.getFileContent(fileName: "MyInfo.txt")))
                 .interpolation(.none)
                 .resizable()
                 .scaledToFit()
@@ -46,7 +47,7 @@ struct MyIdView: View {
 
 struct MyIDView_Previews: PreviewProvider {
     static var previews: some View {
-        MyIdView(id: UUID().uuidString)
+        MyIdView()
             .preferredColorScheme(.light)
     }
 }

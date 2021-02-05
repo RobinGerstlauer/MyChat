@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CodeScanner
 
 struct AddContactView: View {
     //Getting Database(ManagedObjectContext)
@@ -13,7 +14,8 @@ struct AddContactView: View {
     @Environment (\.presentationMode) var presentationMode
   
     @State var name = ""
-    @State var key = ""
+    @State var id = ""
+    @State private var isShowingScanner = false
     
     var body: some View {
         //making form
@@ -22,30 +24,54 @@ struct AddContactView: View {
                 Section(header: Text("Name")) {
                     TextField("Name", text: $name)
                 }
-                Section(header: Text("Id")) {
-                    TextField("Id", text: $key)
-                }
+                
                 Button(action: {
-                //Creating new contact
-                    let newContact = Contact(context: viewContext)
-                    newContact.name = self.name
-                    newContact.key = "2"
-                    newContact.id = UUID()
-                    newContact.foriginId=self.key
-                    newContact.date = Date()
-                    //saving the contact
-                    do {
-                        try viewContext.save()
-                        print("Contact saved.")
-                        presentationMode.wrappedValue.dismiss()
-                    } catch {
-                        print(error.localizedDescription)
-                    }
+                    self.isShowingScanner = true
                 }) {
-                    Text("Add Contact")
+                    HStack{
+                        Spacer()
+                        Text("Scan Id")
+                        Image(systemName: "qrcode.viewfinder")
+                        Spacer()
+                    }
                 }
+            
+                .sheet(isPresented: $isShowingScanner){
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "8AF7FB18-B756-4EBB-A1EB-F5233EF3DB33",completion: self.handleScan)
+                    
+                }
+                    
+                
             }
             .navigationTitle("Add Contact")
+        }
+        
+    }
+    func saveContact(){
+        let newContact = Contact(context: viewContext)
+        newContact.name = self.name
+        newContact.key = "2"
+        newContact.id = UUID()
+        newContact.foriginId = UUID(uuidString: id)
+        newContact.date = Date()
+        //saving the contact
+        do {
+            try viewContext.save()
+            print("Contact saved.")
+            presentationMode.wrappedValue.dismiss()
+        } catch {
+            print("Error saving contact: \(error.localizedDescription)")
+        }
+    }
+func handleScan(result: Result<String,CodeScannerView.ScanError>){
+        self.isShowingScanner = false
+        switch result {
+        case .success(let code):
+            id = code
+            saveContact()
+            
+        case .failure(let error):
+            print("Scanning failed: \(error)")
         }
     }
 }

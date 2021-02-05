@@ -23,6 +23,7 @@ struct ContactView: View {
     
 
     var con = MqttConnection()
+    var info = MyInfo()
     
     var body: some View {
         ZStack{
@@ -62,7 +63,13 @@ struct ContactView: View {
             }
         }
         .onAppear(){
-            con.StartMQTT(contacts: contacts)
+            print ("ContactView appeared")
+           
+            if !con.CheckMQTTConnectionStatus(){
+                con.StartMQTT(contacts: contacts, viewContext: viewContext)
+                con.subscribeToTopics()
+            }
+            info.makeUUIDFile()
             
         }
     }

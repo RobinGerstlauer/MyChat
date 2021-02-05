@@ -10,75 +10,76 @@ import Moscapsule
 import CoreData
 import SwiftUI
 
+
 let DeviceId : String = "\(UIDevice.current.identifierForVendor!.uuidString)"
-let mqttConfig = MQTTConfig(clientId: DeviceId, host: "194.36.145.14", port: 1883, keepAlive: 60)
+let mqttConfig = MQTTConfig(clientId: DeviceId, host: "mqtt.keybit.ch", port: 8883, keepAlive: 60)
+
+
+//let bundlePath = Bundle(for: NSClassFromString("cert.bundle")!)
+
+
+
 var mqttClient = MQTT.newConnection(mqttConfig, connectImmediately: false)
-
-
-
-
-struct MqttConnection : View{
-    @Environment(\.managedObjectContext) private var viewContext
-
+class MqttConnection{
    
+    @Environment(\.managedObjectContext) private var ViewContext
     
     
-    var body: some View {
-        Text("moin")
-    }
-    
-    
-    
-    func saveMessage(){
-        do {
-            try viewContext.save()
-    
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func StartMQTT(contacts: FetchedResults<Contact>) -> Void {
-        
-        print("\(UIDevice.current.identifierForVendor!.uuidString)")
-        
+    func StartMQTT(contacts: FetchedResults<Contact>,viewContext: NSManagedObjectContext) -> Void {
         moscapsule_init()
-     
+        
+        
+        let bundlePath = Bundle(for: NSClassFromString("cert.bundle")!)
+        //let bundlePath = Bundle(for: type(of: self)).bundlePath.appending("cert.Bundle")
+        //let certFile = bundlePath.appending("mosquitto.org.crt")
+        
+        mqttConfig.mqttServerCert = MQTTServerCert(cafile: certFile, capath: nil)
+
+        
     // Receive published message here
+        
         mqttConfig.onMessageCallback = { mqttMessage in
-            let con = MqttConnection()
             let receivedMessage = mqttMessage.payloadString!
             let receivedTopic = mqttMessage.topic
-            var receivedContact : Contact = Contact()
+            let topicInParts = receivedTopic.components(separatedBy: "/")
+            print ("recievedMessage: \(receivedMessage)")
+            print ("recievedTopic: \(receivedTopic)")
+            print ("Topic part 0 \(topicInParts[0])")
+            print ("Topic part 1 \(topicInParts[1])")
             for contact in contacts{
-                if (contact.foriginId == receivedTopic){
-                receivedContact = contact
+                if (contact.foriginId?.uuidString == topicInParts[1]){
+                    print("recievedContact : \(contact.name ?? "error")")
+                    
+                    let newMessage = Message(context: viewContext)
+                    newMessage.message = receivedMessage
+                    newMessage.id = UUID()
+                    newMessage.date=Date()
+                    newMessage.contacts = contact
+                    newMessage.isCurrentUser = false
+                    
+                    contact.date = Date()
+                    do {
+                        try viewContext.save()
+                
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
                 }
             }
             
-            print("recievedContact : \(receivedContact.name ?? "error")")
-            print ("recievedMessage: \(receivedMessage)")
-            print ("recievedTopic: \(receivedTopic)")
-            let newMessage = Message(context: viewContext)
-            newMessage.message = receivedMessage
-            newMessage.id = UUID()
-            newMessage.date=Date()
-            newMessage.contacts = receivedContact
-            newMessage.isCurrentUser=false
-            receivedContact.date = Date()
-            con.saveMessage()
+           
             
         }
      
     // Connecting to Mqtt server
         mqttClient = MQTT.newConnection(mqttConfig, connectImmediately: true)
-        subscribeToTopic()
+       
     }
-    //Subscribing to Topics
-    func subscribeToTopic() -> Void {
-        let topic = "\(DeviceId)"
-            
-            mqttClient.subscribe(topic, qos: 2)
+    
+    func subscribeToTopics(){
+        
+            mqttClient.subscribe("\(MyInfo().getFileContent(fileName: "MyInfo.txt"))/#", qos: 2)
         
     }
     // Check MQTT connection status
@@ -88,8 +89,8 @@ struct MqttConnection : View{
      
     }
     func PublishMessage(message: String ,contactId: String){
-        mqttClient.publish(string: "\(message)" , topic: "\(DeviceId)" , qos: 2, retain: false)
-        //mqttClient.publish(string: "\(message)" , topic: "\(contactId)/\(myID)" , qos: 2, retain: false)
+        mqttClient.publish(string: "\(message)" , topic: "\(contactId)/\(MyInfo().getFileContent(fileName: "MyInfo.txt"))" , qos: 2, retain: false)
+        
     }
     
     func getContactbyForiginId(name : String){

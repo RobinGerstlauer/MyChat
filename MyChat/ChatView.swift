@@ -49,7 +49,7 @@ struct ChatView: View {
             newMessage.isCurrentUser=true
             currentContact.date = Date()
             //Try to save the Messages
-            con.PublishMessage(message: text, contactId: currentContact.foriginId!)
+            con.PublishMessage(message: text, contactId: currentContact.foriginId!.uuidString)
             do {
                 try viewContext.save()
                 print("Message saved.")

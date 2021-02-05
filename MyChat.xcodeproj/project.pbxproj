@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D4016C3825AF2BE40032C703 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016C3725AF2BE40032C703 /* TestView.swift */; };
 		D446212C25B82FD600D8E774 /* MqttConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446212B25B82FD600D8E774 /* MqttConnection.swift */; };
 		D46FC89B25BEE6C3003D6B1A /* GetContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */; };
+		D4762F8F25CC173E002776E6 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D4762F8E25CC173E002776E6 /* CodeScanner */; };
+		D47ADB3925CADE3300A85AFE /* MyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47ADB3825CADE3300A85AFE /* MyInfo.swift */; };
+		D47ADB3C25CAE24C00A85AFE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47ADB3B25CAE24C00A85AFE /* Data.swift */; };
 		D4CEB31525A9F19E00E95C20 /* MyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */; };
 		D4CEB31725A9F19E00E95C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB31625A9F19E00E95C20 /* ContentView.swift */; };
 		D4CEB31925A9F1A000E95C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CEB31825A9F1A000E95C20 /* Assets.xcassets */; };
@@ -32,6 +35,8 @@
 		D4016C3725AF2BE40032C703 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D446212B25B82FD600D8E774 /* MqttConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttConnection.swift; sourceTree = "<group>"; };
 		D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContacts.swift; sourceTree = "<group>"; };
+		D47ADB3825CADE3300A85AFE /* MyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfo.swift; sourceTree = "<group>"; };
+		D47ADB3B25CAE24C00A85AFE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D4CEB31125A9F19E00E95C20 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatApp.swift; sourceTree = "<group>"; };
 		D4CEB31625A9F19E00E95C20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4762F8F25CC173E002776E6 /* CodeScanner in Frameworks */,
 				DF632DC45A743246B3CBA475 /* Pods_MyChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +107,7 @@
 				D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */,
 				D4CEB33B25A9FE7100E95C20 /* MessageRow.swift */,
 				D4CEB31625A9F19E00E95C20 /* ContentView.swift */,
+				D47ADB3825CADE3300A85AFE /* MyInfo.swift */,
 				D4016C3725AF2BE40032C703 /* TestView.swift */,
 				D4CEB32C25A9F7A400E95C20 /* MyIdView.swift */,
 				D4CEB32925A9F78400E95C20 /* ContactView.swift */,
@@ -108,6 +115,7 @@
 				D4CEB33E25AA198600E95C20 /* AddContactView.swift */,
 				D4CEB32F25A9F8DE00E95C20 /* ContactRow.swift */,
 				D446212B25B82FD600D8E774 /* MqttConnection.swift */,
+				D47ADB3B25CAE24C00A85AFE /* Data.swift */,
 				D4CEB31825A9F1A000E95C20 /* Assets.xcassets */,
 				D4CEB31D25A9F1A000E95C20 /* Persistence.swift */,
 				D4CEB32225A9F1A000E95C20 /* Info.plist */,
@@ -144,6 +152,9 @@
 			dependencies = (
 			);
 			name = MyChat;
+			packageProductDependencies = (
+				D4762F8E25CC173E002776E6 /* CodeScanner */,
+			);
 			productName = MyChat;
 			productReference = D4CEB31125A9F19E00E95C20 /* MyChat.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +182,9 @@
 				Base,
 			);
 			mainGroup = D4CEB30825A9F19E00E95C20;
+			packageReferences = (
+				D4762F8D25CC173E002776E6 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = D4CEB31225A9F19E00E95C20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CEB31E25A9F1A000E95C20 /* Persistence.swift in Sources */,
+				D47ADB3C25CAE24C00A85AFE /* Data.swift in Sources */,
 				D4CEB33F25AA198600E95C20 /* AddContactView.swift in Sources */,
 				D4016C3825AF2BE40032C703 /* TestView.swift in Sources */,
 				D4CEB32D25A9F7A400E95C20 /* MyIdView.swift in Sources */,
@@ -252,6 +267,7 @@
 				D446212C25B82FD600D8E774 /* MqttConnection.swift in Sources */,
 				D4CEB33025A9F8DE00E95C20 /* ContactRow.swift in Sources */,
 				D4CEB31525A9F19E00E95C20 /* MyChatApp.swift in Sources */,
+				D47ADB3925CADE3300A85AFE /* MyInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4762F8D25CC173E002776E6 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4762F8E25CC173E002776E6 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4762F8D25CC173E002776E6 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D4CEB31F25A9F1A000E95C20 /* MyChat.xcdatamodeld */ = {

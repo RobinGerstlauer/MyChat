@@ -17,7 +17,7 @@ struct PersistenceController {
         for y in 0..<10 {
             let newItem = Contact(context: viewContext)
             newItem.name="Contact \(y)"
-            newItem.foriginId = "20"
+           
             newItem.key = "moin moin"
             newItem.id = UUID()
             newItem.date = Date()

@@ -20,15 +20,7 @@ struct getContact:View{
     var body: some View{
         Text("moin")
     }
-    func getSpecificContact(id: String) -> Contact {
-        var exactContact = Contact()
-        for contact in contacts{
-            if(contact.foriginId == id){
-                exactContact = contact
-            }
-        }
-        return exactContact
-    }
+    
     func getContacts()->FetchedResults<Contact>{
     
         return self.contacts
