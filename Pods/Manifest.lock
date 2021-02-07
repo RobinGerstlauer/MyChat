@@ -1,20 +1,28 @@
 PODS:
-  - CocoaAsyncSocket (7.6.5)
-  - CocoaMQTT (1.2.5):
-    - CocoaAsyncSocket (~> 7.6.3)
+  - Moscapsule (0.6.4)
+  - OpenSSL-Universal (1.0.1.20)
 
 DEPENDENCIES:
-  - CocoaMQTT
+  - Moscapsule (from `https://github.com/flightonary/Moscapsule.git`)
+  - OpenSSL-Universal (~> 1.0.1.20)
 
 SPEC REPOS:
   trunk:
-    - CocoaAsyncSocket
-    - CocoaMQTT
+    - OpenSSL-Universal
+
+EXTERNAL SOURCES:
+  Moscapsule:
+    :git: https://github.com/flightonary/Moscapsule.git
+
+CHECKOUT OPTIONS:
+  Moscapsule:
+    :commit: dac89a1b5ad1163e88aaad2c2627dee4eea6e572
+    :git: https://github.com/flightonary/Moscapsule.git
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
+  Moscapsule: 6bb834c60e24251897dc1cb2c4552fd674f887f3
+  OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
 
-PODFILE CHECKSUM: d159d4758737558cbc4b16daf8e40830826acb49
+PODFILE CHECKSUM: 376454131a90906f549876f6214e0310c4c27d51
 
 COCOAPODS: 1.10.1

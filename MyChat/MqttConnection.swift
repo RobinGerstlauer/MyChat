@@ -13,29 +13,19 @@ import SwiftUI
 
 let DeviceId : String = "\(UIDevice.current.identifierForVendor!.uuidString)"
 let mqttConfig = MQTTConfig(clientId: DeviceId, host: "mqtt.keybit.ch", port: 8883, keepAlive: 60)
-
-
-//let bundlePath = Bundle(for: NSClassFromString("cert.bundle")!)
-
-
-
 var mqttClient = MQTT.newConnection(mqttConfig, connectImmediately: false)
+
+
 class MqttConnection{
    
     @Environment(\.managedObjectContext) private var ViewContext
     
     
     func StartMQTT(contacts: FetchedResults<Contact>,viewContext: NSManagedObjectContext) -> Void {
-        moscapsule_init()
         
         
-        let bundlePath = Bundle(for: NSClassFromString("cert.bundle")!)
-        //let bundlePath = Bundle(for: type(of: self)).bundlePath.appending("cert.Bundle")
-        //let certFile = bundlePath.appending("mosquitto.org.crt")
-        
-        mqttConfig.mqttServerCert = MQTTServerCert(cafile: certFile, capath: nil)
-
-        
+    moscapsule_init()
+       
     // Receive published message here
         
         mqttConfig.onMessageCallback = { mqttMessage in

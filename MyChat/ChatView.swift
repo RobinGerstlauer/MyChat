@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CoreData
-import Moscapsule
+
 
 struct ChatView: View {
     //Atribut declaration

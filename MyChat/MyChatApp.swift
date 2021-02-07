@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Moscapsule
+
 
 
 //Standart sachen ****************************************************************************
