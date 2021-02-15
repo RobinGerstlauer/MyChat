@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CryptoKit
 
 struct MyInfo {
     
@@ -29,18 +30,19 @@ struct MyInfo {
                 print("epic Fail: \(error)")
             }
         }
-       
-        
     }
-    func getFileContent(fileName: String)->String{
+        
+    
+    
+    func getContents(fileName: String)->String{
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let url = NSURL(fileURLWithPath: path)
-        if let pathComponent = url.appendingPathComponent("\(fileName)"){
-            let filePath = pathComponent.path
+        if let pathComponent = url.appendingPathComponent(fileName){
+            let pathComponent2 = pathComponent.appendingPathExtension("txt")
+            let filePath = pathComponent2.path
             do {
                 // Get the contents
                 let contents = try NSString(contentsOfFile: filePath, encoding: String.Encoding.utf8.rawValue)
-                print("myUUID: \(contents)")
                 return contents as String
             }
             catch let error as NSError {
@@ -48,10 +50,12 @@ struct MyInfo {
             }
         }
         
-        print ("Error: Somthing went wrong")
+        print ("Error: Somthing went wrongl")
         return "Error: Somthing went wrong"
     }
     
+    
+  
     func checkIfFileExists(fileName: String)->Bool{
         
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
@@ -63,7 +67,7 @@ struct MyInfo {
                 print("File Available")
                 return true
             } else {
-                print("FILE PATH NOT AVAILABLE")
+                print("File not available")
                 return false
             }
         }
@@ -72,3 +76,20 @@ struct MyInfo {
     }
     
 }
+/*
+ var contents = Data()
+ let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+ let url = NSURL(fileURLWithPath: path)
+ if let pathComponent = url.appendingPathComponent(name){
+     let filePath = pathComponent.path
+     do {
+         // Get the contents
+         
+         let contentAsString = try! String(contentsOfFile: filePath, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+         contents = Data(contentAsString.utf8)
+     }
+     
+ }
+ 
+ print ("Error: Somthing went wrong")
+ */

@@ -14,7 +14,7 @@ struct AddContactView: View {
     @Environment (\.presentationMode) var presentationMode
   
     @State var name = ""
-    @State var id = ""
+    
     @State private var isShowingScanner = false
     
     var body: some View {
@@ -26,7 +26,9 @@ struct AddContactView: View {
                 }
                 
                 Button(action: {
-                    self.isShowingScanner = true
+                    if(self.name != ""){
+                        self.isShowingScanner = true
+                    }
                 }) {
                     HStack{
                         Spacer()
@@ -37,7 +39,7 @@ struct AddContactView: View {
                 }
             
                 .sheet(isPresented: $isShowingScanner){
-                    CodeScannerView(codeTypes: [.qr], simulatedData: "8AF7FB18-B756-4EBB-A1EB-F5233EF3DB33",completion: self.handleScan)
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "528EFDB1-E9B6-469E-9CDC-2F4BB0944E8C/!#DyYunJPQktcVQqFzbyOy/yuayQY3Rso2L0d4Rdy8+CI=",completion: self.handleScan)
                     
                 }
                     
@@ -47,13 +49,14 @@ struct AddContactView: View {
         }
         
     }
-    func saveContact(){
+    func saveContact(key: Data, id: String){
         let newContact = Contact(context: viewContext)
         newContact.name = self.name
-        newContact.key = "2"
+        newContact.key = key
         newContact.id = UUID()
-        newContact.foriginId = UUID(uuidString: id)
+        newContact.foriginId = id
         newContact.date = Date()
+        print("id: \(id)")
         //saving the contact
         do {
             try viewContext.save()
@@ -67,8 +70,10 @@ func handleScan(result: Result<String,CodeScannerView.ScanError>){
         self.isShowingScanner = false
         switch result {
         case .success(let code):
-            id = code
-            saveContact()
+            
+            let scanInParts = code.components(separatedBy: "/!#")
+            
+            saveContact(key: Data(base64Encoded: scanInParts[1])!,id: scanInParts[0])
             
         case .failure(let error):
             print("Scanning failed: \(error)")

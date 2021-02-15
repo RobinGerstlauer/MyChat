@@ -12,7 +12,9 @@ let context = CIContext()
 let filter = CIFilter.qrCodeGenerator()
 //Function to Scale up a Generated code
 func generateQRCode(from string: String) -> UIImage {
-    let data = Data(string.utf8)
+    print (string)
+    let data = string.data(using: String.Encoding.ascii)
+   
     filter.setValue(data, forKey: "inputMessage")
     if let outputImage = filter.outputImage {
         if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
@@ -22,6 +24,9 @@ func generateQRCode(from string: String) -> UIImage {
 
     return UIImage(systemName: "xmark.circle") ?? UIImage()
 }
+var data = "\(info.getContents(fileName: "MyInfo"))/!#"
+var data2 = Encription().getPublicKey().base64EncodedString()
+var string = "\(data)\(data2)"
 
 struct MyIdView: View {
     
@@ -32,9 +37,9 @@ struct MyIdView: View {
             Text("My ID")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding()
-            Text(info.getFileContent(fileName: "MyInfo.txt"))
-            Image(uiImage: generateQRCode(from: info.getFileContent(fileName: "MyInfo.txt")))
+            Image(uiImage: generateQRCode(from: string))
                 .interpolation(.none)
+                
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)

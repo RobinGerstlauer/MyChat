@@ -18,7 +18,7 @@ struct PersistenceController {
             let newItem = Contact(context: viewContext)
             newItem.name="Contact \(y)"
            
-            newItem.key = "moin moin"
+            newItem.key = "moin moin".data(using: .utf8)
             newItem.id = UUID()
             newItem.date = Date()
         }

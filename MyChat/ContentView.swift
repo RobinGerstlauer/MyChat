@@ -8,8 +8,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-
-    
+    @State var showingAlert = false
     
     var body: some View {
         //Making a tab view and putting the corresponding views in it
@@ -28,9 +27,11 @@ struct ContentView: View {
                         Text("My ID")
                 }
             }.edgesIgnoringSafeArea(.all)
-        .onAppear(){
-        }
+        
+        
+    
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContactView: View {
-    @State var showAddContact = false
+    @State private var showAddContact = false
+    
     //Get Database
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -24,6 +25,7 @@ struct ContactView: View {
 
     var con = MqttConnection()
     var info = MyInfo()
+    var encryption = Encription()
     
     var body: some View {
         ZStack{
@@ -61,16 +63,13 @@ struct ContactView: View {
                     }
                 
             }
+            
         }
         .onAppear(){
             print ("ContactView appeared")
-           
-            if !con.CheckMQTTConnectionStatus(){
-                con.StartMQTT(contacts: contacts, viewContext: viewContext)
-                con.subscribeToTopics()
-            }
             info.makeUUIDFile()
-            
+            encryption.saveEncriptionKeys()
+            con.StartMQTT(contacts: contacts, viewContext: viewContext)
         }
     }
     

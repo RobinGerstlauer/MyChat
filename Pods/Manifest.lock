@@ -1,13 +1,16 @@
 PODS:
+  - KeychainSwift (19.0.0)
   - Moscapsule (0.6.4)
   - OpenSSL-Universal (1.0.1.20)
 
 DEPENDENCIES:
+  - KeychainSwift
   - Moscapsule (from `https://github.com/flightonary/Moscapsule.git`)
-  - OpenSSL-Universal (~> 1.0.1.20)
+  - OpenSSL-Universal
 
 SPEC REPOS:
   trunk:
+    - KeychainSwift
     - OpenSSL-Universal
 
 EXTERNAL SOURCES:
@@ -20,9 +23,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/flightonary/Moscapsule.git
 
 SPEC CHECKSUMS:
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   Moscapsule: 6bb834c60e24251897dc1cb2c4552fd674f887f3
   OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
 
-PODFILE CHECKSUM: 376454131a90906f549876f6214e0310c4c27d51
+PODFILE CHECKSUM: 97e71b1d9c7cb84401a138586d336f9061c6d479
 
 COCOAPODS: 1.10.1
