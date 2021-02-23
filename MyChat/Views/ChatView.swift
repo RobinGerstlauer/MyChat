@@ -15,7 +15,7 @@ struct ChatView: View {
     
     var con = MqttConnection()
     @State private var text = ""
-    
+
     //Get database
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -68,18 +68,29 @@ struct ChatView: View {
             List(messages) { Message in
                 MessageRow(message:Message)
                     .scaleEffect(x: 1, y: -1, anchor: .center)
+                    .onAppear(){
+                        currentContact.unread = false
+                        do {
+                            try viewContext.save()
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                           
+                    }
             }
             .scaleEffect(x: 1, y: -1, anchor: .center)
-            .listStyle(PlainListStyle())
+            
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 //Setting Title
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("\(currentContact.name!)").font(.headline)
+                        Text("\(currentContact.name ?? "Error")").font(.headline)
                     }
                 }
             }
+            
+
             //Text input and send button
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
                 TextField( "Message",
@@ -88,18 +99,19 @@ struct ChatView: View {
                         onCommit: {commitMessage()}
                 )
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                .padding(.leading)
                 Button(action: {
                     commitMessage()
                 }) {
                     Image(systemName: "paperplane.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 20, height: 20)
+                    .frame(width: 25, height: 25)
                 }
                 .padding()
             }
         }
+        
         
     }
     

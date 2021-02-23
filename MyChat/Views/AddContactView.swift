@@ -17,6 +17,9 @@ struct AddContactView: View {
     
     @State private var isShowingScanner = false
     
+    //for the simulator to be able to add it self
+    var data = "\(String(describing: keychain.get("MyId")))/!#"
+    var data2 = Encription().getPublicKey().base64EncodedString()
     var body: some View {
         //making form
         NavigationView {
@@ -39,7 +42,7 @@ struct AddContactView: View {
                 }
             
                 .sheet(isPresented: $isShowingScanner){
-                    CodeScannerView(codeTypes: [.qr], simulatedData: "528EFDB1-E9B6-469E-9CDC-2F4BB0944E8C/!#DyYunJPQktcVQqFzbyOy/yuayQY3Rso2L0d4Rdy8+CI=",completion: self.handleScan)
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "\(data)\(data2)" ,completion: self.handleScan)
                     
                 }
                     
@@ -49,18 +52,20 @@ struct AddContactView: View {
         }
         
     }
-    func saveContact(key: Data, id: String){
+    func saveContact(key: Data, id: String, name: String){
         let newContact = Contact(context: viewContext)
-        newContact.name = self.name
+        newContact.name = name
         newContact.key = key
         newContact.id = UUID()
         newContact.foriginId = id
         newContact.date = Date()
+        newContact.unread = false
         print("id: \(id)")
         //saving the contact
         do {
             try viewContext.save()
             print("Contact saved.")
+            MqttConnection().addNewContact(contact: newContact)
             presentationMode.wrappedValue.dismiss()
         } catch {
             print("Error saving contact: \(error.localizedDescription)")
@@ -73,7 +78,7 @@ func handleScan(result: Result<String,CodeScannerView.ScanError>){
             
             let scanInParts = code.components(separatedBy: "/!#")
             
-            saveContact(key: Data(base64Encoded: scanInParts[1])!,id: scanInParts[0])
+            saveContact(key: Data(base64Encoded: scanInParts[2])!,id: scanInParts[0], name: scanInParts[1] )
             
         case .failure(let error):
             print("Scanning failed: \(error)")

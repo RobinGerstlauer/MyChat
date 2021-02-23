@@ -9,8 +9,6 @@ import Foundation
 import KeychainSwift
 
 class Encription {
-    var info = MyInfo()
-    
     let keychain = KeychainSwift()
     func saveEncriptionKeys(){
         if (keychain.getData("PublicKey") == nil || keychain.getData("PrivateKey") == nil){

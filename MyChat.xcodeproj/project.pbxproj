@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		85BC38F19F0F7D26D16BF1C1 /* Pods_MyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5BF21C94B0BEB0D45B69CD /* Pods_MyChat.framework */; };
-		D4016C3825AF2BE40032C703 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016C3725AF2BE40032C703 /* TestView.swift */; };
 		D446212C25B82FD600D8E774 /* MqttConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446212B25B82FD600D8E774 /* MqttConnection.swift */; };
 		D45CAEAE25D3EA8B004581E9 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CAEAD25D3EA8B004581E9 /* Encryption.swift */; };
 		D46FC89B25BEE6C3003D6B1A /* GetContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */; };
 		D4762F8F25CC173E002776E6 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D4762F8E25CC173E002776E6 /* CodeScanner */; };
-		D47ADB3925CADE3300A85AFE /* MyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47ADB3825CADE3300A85AFE /* MyInfo.swift */; };
-		D47ADB3C25CAE24C00A85AFE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47ADB3B25CAE24C00A85AFE /* Data.swift */; };
+		D47ADB3C25CAE24C00A85AFE /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47ADB3B25CAE24C00A85AFE /* DataConnection.swift */; };
 		D4CEB31525A9F19E00E95C20 /* MyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */; };
 		D4CEB31725A9F19E00E95C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB31625A9F19E00E95C20 /* ContentView.swift */; };
 		D4CEB31925A9F1A000E95C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CEB31825A9F1A000E95C20 /* Assets.xcassets */; };
@@ -31,12 +29,11 @@
 
 /* Begin PBXFileReference section */
 		6F5BF21C94B0BEB0D45B69CD /* Pods_MyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4016C3725AF2BE40032C703 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		D40B89A325DFFA8100A46D0D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		D446212B25B82FD600D8E774 /* MqttConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttConnection.swift; sourceTree = "<group>"; };
 		D45CAEAD25D3EA8B004581E9 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
 		D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContacts.swift; sourceTree = "<group>"; };
-		D47ADB3825CADE3300A85AFE /* MyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfo.swift; sourceTree = "<group>"; };
-		D47ADB3B25CAE24C00A85AFE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D47ADB3B25CAE24C00A85AFE /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
 		D4CEB31125A9F19E00E95C20 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatApp.swift; sourceTree = "<group>"; };
 		D4CEB31625A9F19E00E95C20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +74,46 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D4A30CA925DBA7FB0064F6A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4A30CAC25DBA88C0064F6A8 /* Rows */,
+				D4CEB31625A9F19E00E95C20 /* ContentView.swift */,
+				D4CEB32C25A9F7A400E95C20 /* MyIdView.swift */,
+				D4CEB33E25AA198600E95C20 /* AddContactView.swift */,
+				D4CEB32925A9F78400E95C20 /* ContactView.swift */,
+				D4CEB33325A9FB2B00E95C20 /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4A30CAB25DBA85D0064F6A8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */,
+				D47ADB3B25CAE24C00A85AFE /* DataConnection.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D4A30CAC25DBA88C0064F6A8 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB33B25A9FE7100E95C20 /* MessageRow.swift */,
+				D4CEB32F25A9F8DE00E95C20 /* ContactRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		D4A30CAD25DBA8CA0064F6A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D45CAEAD25D3EA8B004581E9 /* Encryption.swift */,
+				D446212B25B82FD600D8E774 /* MqttConnection.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		D4CEB30825A9F19E00E95C20 = {
 			isa = PBXGroup;
 			children = (
@@ -98,25 +135,16 @@
 		D4CEB31325A9F19E00E95C20 /* MyChat */ = {
 			isa = PBXGroup;
 			children = (
+				D4A30CAD25DBA8CA0064F6A8 /* Source */,
+				D4A30CAB25DBA85D0064F6A8 /* Tests */,
+				D4A30CA925DBA7FB0064F6A8 /* Views */,
 				D4CEB31425A9F19E00E95C20 /* MyChatApp.swift */,
-				D4CEB33B25A9FE7100E95C20 /* MessageRow.swift */,
-				D4CEB31625A9F19E00E95C20 /* ContentView.swift */,
-				D45CAEAD25D3EA8B004581E9 /* Encryption.swift */,
-				D47ADB3825CADE3300A85AFE /* MyInfo.swift */,
-				D4016C3725AF2BE40032C703 /* TestView.swift */,
-				D4CEB32C25A9F7A400E95C20 /* MyIdView.swift */,
-				D4CEB32925A9F78400E95C20 /* ContactView.swift */,
-				D4CEB33325A9FB2B00E95C20 /* ChatView.swift */,
-				D4CEB33E25AA198600E95C20 /* AddContactView.swift */,
-				D4CEB32F25A9F8DE00E95C20 /* ContactRow.swift */,
-				D446212B25B82FD600D8E774 /* MqttConnection.swift */,
-				D47ADB3B25CAE24C00A85AFE /* Data.swift */,
 				D4CEB31825A9F1A000E95C20 /* Assets.xcassets */,
 				D4CEB31D25A9F1A000E95C20 /* Persistence.swift */,
 				D4CEB32225A9F1A000E95C20 /* Info.plist */,
+				D40B89A325DFFA8100A46D0D /* AppIcon.png */,
 				D4CEB31F25A9F1A000E95C20 /* MyChat.xcdatamodeld */,
 				D4CEB31A25A9F1A000E95C20 /* Preview Content */,
-				D46FC89A25BEE6C3003D6B1A /* GetContacts.swift */,
 			);
 			path = MyChat;
 			sourceTree = "<group>";
@@ -257,9 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CEB31E25A9F1A000E95C20 /* Persistence.swift in Sources */,
-				D47ADB3C25CAE24C00A85AFE /* Data.swift in Sources */,
+				D47ADB3C25CAE24C00A85AFE /* DataConnection.swift in Sources */,
 				D4CEB33F25AA198600E95C20 /* AddContactView.swift in Sources */,
-				D4016C3825AF2BE40032C703 /* TestView.swift in Sources */,
 				D4CEB32D25A9F7A400E95C20 /* MyIdView.swift in Sources */,
 				D4CEB33C25A9FE7100E95C20 /* MessageRow.swift in Sources */,
 				D45CAEAE25D3EA8B004581E9 /* Encryption.swift in Sources */,
@@ -271,7 +298,6 @@
 				D446212C25B82FD600D8E774 /* MqttConnection.swift in Sources */,
 				D4CEB33025A9F8DE00E95C20 /* ContactRow.swift in Sources */,
 				D4CEB31525A9F19E00E95C20 /* MyChatApp.swift in Sources */,
-				D47ADB3925CADE3300A85AFE /* MyInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_BUNDLE_IDENTIFIER = RobinGerstlauer.MyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = RobinDavidGerstlauer.MyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
@@ -436,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_BUNDLE_IDENTIFIER = RobinGerstlauer.MyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = RobinDavidGerstlauer.MyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;

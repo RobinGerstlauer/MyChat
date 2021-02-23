@@ -12,6 +12,7 @@ struct getContact:View{
     var contactRequest : FetchRequest<Contact>
     //fetching results
     var contacts : FetchedResults<Contact>{contactRequest.wrappedValue}
+    
     init() {
         //making fetch Request
         contactRequest = FetchRequest<Contact>(entity: Contact.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)], predicate: nil)

@@ -15,234 +15,301 @@
 			dependencies = (
 			);
 			name = "OpenSSL-Universal";
-			productName = "OpenSSL-Universal";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		04F910351D5B2B3A2B1EBD2F99B2EB83 /* Moscapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8D612445C4C1D4641A89DC3607C6CD /* Moscapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26EE9A141B1E77A9BDA1998DB58B2E7A /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C01940B3C3BE612A53C37A14AF4B23DD /* mosquitto_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		27F313724F7D95F18618530FE447BB9E /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = E764B3880AA66CBD5D56E764424A1A4E /* read_handle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00002218239DA89866D05F5F3F40E0CD /* Pods-MyChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E10B449645CA23BDAF7B7AD4A1D91A6 /* Pods-MyChat-dummy.m */; };
+		04F910351D5B2B3A2B1EBD2F99B2EB83 /* Moscapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5B2DCA72861AE2940E49C00DE92A85 /* Moscapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26EE9A141B1E77A9BDA1998DB58B2E7A /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE7BCA76A34F544CBCEE193F8502C5A /* mosquitto_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		279D098D13FA6B2F90F1CF76EF199852 /* Franz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8472B1500C2CBD637F0E7078F47AC47A /* Franz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27F313724F7D95F18618530FE447BB9E /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 057491F5350B1E7790DCF84B0D43DF0F /* read_handle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FE45FE903E4ADCC1D038E33896244AE /* OffsetCommitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487443E421D14472878B59528B67780 /* OffsetCommitAPI.swift */; };
 		30528E9F78AD793A9A7CEB6C6A8A054F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		30965DA14018B64BA32F53ADC737E299 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A3887C62E9F7BDE407A2716A2FDBA5 /* messages_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3167AE879DCB478DF1C0C7928941A70F /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09493A62D514899C4CA9C2B9ECE8CD5F /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF74110265E57BA7733E1723C44AFAC /* TegKeychainConstants.swift */; };
-		34B398983ABD578A8B55B9B48063635D /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE4D6CB4BAA9EB7AED24CDEE183619 /* time_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3856DD1F8156949C21EAD7070C5D6D90 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 32E7FC560D9B023486D637D67D59B684 /* net_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		40585748CBA794ED500B13A0C60176A3 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 78B0989924B62698617C7227AD98AC4A /* will_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD3BE6677BB3941CDEABFD3C8EA612 /* KeychainSwiftAccessOptions.swift */; };
-		49DBED1A9FB4FA8B8922879081241A05 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9156D51EC95E7F2A3B38F3653EF49521 /* thread_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA642E8E89BD8E8AD8E3AD12D355D7D7 /* KeychainSwift-dummy.m */; };
-		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EC9EB45FB4FE062B0763912C072DC /* KeychainSwift.swift */; };
-		4EF19190D5C11FF0103CEFE8ADA4720E /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6393D5135D58D28F4E71B8E821EA965C /* util_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5C1DD4A16E7846E8F6B81B6BB522B2B9 /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B92FF8B2CCA0858D990B339A7A9D0C /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5FA32FA95EFB940CDF9A11B8EA6DF841 /* socks_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = A501D2C40675F6D6DBD8AB83EA88AEC6 /* socks_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6A00DC709BD0ADE626F8F82C21FB3828 /* Moscapsule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF2254771D5EA41F6A2C5F12DDC772 /* Moscapsule-dummy.m */; };
-		6AAAB2A62BB82501596990780A50DC0E /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F390D5BF0C7340D3165E76854FA230 /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6C9C564FBBC61E2798402C5FCBC98E70 /* Moscapsule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C4745377FDB73302713D78B6E43A52 /* Moscapsule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DDA7B1420FEF0DC0940A046F3EEFD28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		714AAC9AC35ABDB28320F182AE2C1582 /* Pods-MyChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86237BC3A9110ECE3C033CB7EB3F4217 /* Pods-MyChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		749376A5321C0F0A06906B0E844D9600 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B60625CE2FACC2624E724447009966D9 /* send_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7654165B9654676780976D845475508D /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = F73F13D9776B8A60A77BF43556123DAC /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		784A6077E54DBFDB40E9203FA4A02754 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ED21708FC09D71F0D7AE98CC82CE4F6 /* send_client_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7D49541D38C4B153D32DCD9565FF51C9 /* MosquittoCallbackBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 60469194BAAD19C9089CD1BA10FECE3C /* MosquittoCallbackBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FC9935BC216AA848E4BE94191710D3A /* MosquittoCallbackBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F33276626CD6A9FD78B2A2911863C7 /* MosquittoCallbackBridge.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		86432B28015026AF7347C99E59F6DF21 /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BAE45F485BB318F9170252D477750 /* tls_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8C00B8AF116B8B66CEF97D68262FBC29 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = C7DFC70E1A63E95B9C68EE8090ADFCA8 /* read_handle_shared.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8CAC2FFF199E9F1F05D08BB6D8D232DC /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 97038F1C7F2BEDF5B199F478A64BE57E /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A683243234EFF48DD1047BD2DB8B670B /* srv_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D62973B6C1B791BA3D6AB61A6F362 /* srv_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		ABB7CA5EF58FB8F3E7FC04897BD84BA6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D691F4A7EC5422E0BAD61F26F4A4A7C /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE28A15A76F999361CFC6724398B81CB /* Moscapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FF890633932DCF33B922A7D27FE35B /* Moscapsule.swift */; };
-		B0E2CF21764507BFBA6ECF9F2876D121 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 9381C5A24657D6592787C0CB83667DE4 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B4CD1E2CB40A3508B06E996316A2EB68 /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = E92448B0218792A834A011BDDBA8A8BC /* logging_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B5E774484239BA73713B82B054D6F630 /* socks_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C5B37D27745D399DFB462383B8BECE /* socks_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B6522C21037263F356C6201151202E52 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 4950FCA5E2B112C711AED4AC58ACB64F /* mosquitto.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BEA6E79C98E37E2FD5136CDD36A60183 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C4A90A16FD54A6178EF76A110765CA /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C1B4D90E48C9946FAA141E5155D5CC /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C902FA9EB5731D91B9CF7BBCA5A7A7C9 /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C9820CF238FC66CCCD96C270F41AEE8 /* time_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		30965DA14018B64BA32F53ADC737E299 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF08EE0E51A6E0D962420596ADB178C /* messages_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3167AE879DCB478DF1C0C7928941A70F /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1532ACC71D43053B456431C6EB3117D6 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676F6B9534C27D48C5B55BD622C26CD2 /* TegKeychainConstants.swift */; };
+		34B398983ABD578A8B55B9B48063635D /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = DDCCB2570DEF04492DC7FD094855766A /* time_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		34F56C2C91C7B752EE0DB191E7AC522E /* KafkaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73923AE9DDF18FE5158C0F8C81BC561 /* KafkaResponse.swift */; };
+		377484E6FED1B350EC457E079E8402B6 /* OldConsumers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C7DC4EBD2E981A3DC765AEC18FE4F /* OldConsumers.swift */; };
+		3856DD1F8156949C21EAD7070C5D6D90 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF885E53D5702FD0EBD35C99B398D /* net_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3D719F0690C979B93C03C48EFEFD012A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3E3D97379FE2D6E1C32764D29C90291A /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB79601ED249D00CD261CF7EAF34B5E /* Cluster.swift */; };
+		40585748CBA794ED500B13A0C60176A3 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AE985DCE03285847600774B72E330F09 /* will_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4595D86565B3DC0149352D3A34C395B7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697093D47E510295E126EA19945FB32 /* Group.swift */; };
+		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF81CD8CB100E0C1FEA654332A517AB /* KeychainSwiftAccessOptions.swift */; };
+		49DBED1A9FB4FA8B8922879081241A05 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 62A4140EAE8C70B768749B62AF801AD4 /* thread_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9982B7F03C225DE1707B05C949259E /* KeychainSwift-dummy.m */; };
+		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C8255E6747ACAC4F2B976B2D3BA30 /* KeychainSwift.swift */; };
+		4EF19190D5C11FF0103CEFE8ADA4720E /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = BC922A65B39C9DCF92DE59265F216867 /* util_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		51960EA57257DA052FEF623902C4056A /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5EC5793EA08780717B0E594428F62 /* Topic.swift */; };
+		5884E4E4790FE77ECB23FBE24280B921 /* AdminAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539BF6CBC5F9D6E90B59327F21D87233 /* AdminAPI.swift */; };
+		5C1DD4A16E7846E8F6B81B6BB522B2B9 /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 9343BC14F10676FCC673B5E0BA2A384E /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E9F2D00207A02B3FBD7AD56401030BD /* KafkaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EDBED2795A120DFA6E81E6653A641 /* KafkaRequest.swift */; };
+		5FA32FA95EFB940CDF9A11B8EA6DF841 /* socks_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE8D77DFF3173B333F3344D3B75AB91 /* socks_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A00DC709BD0ADE626F8F82C21FB3828 /* Moscapsule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD03AFB338799A7FE4F8D421C29682 /* Moscapsule-dummy.m */; };
+		6AAAB2A62BB82501596990780A50DC0E /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D1B73548BD6E547C16AEC796CBD35A3 /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C9C564FBBC61E2798402C5FCBC98E70 /* Moscapsule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E9C9D662A7C210969D14E571ED8856 /* Moscapsule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBAE0E265732B0AF63DAC4845BDB0B8 /* Broker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370145BA5CC4AB155A9472D60E0FDBC /* Broker.swift */; };
+		6D63000C39059C789C5C5732F3425038 /* ProduceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C595F06B6F0DDFC6A8346913562974B /* ProduceAPI.swift */; };
+		6EF436879231D431E5BAD52E50EABA5D /* FetchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151AAF33977E48AD32C074E35234DDA /* FetchAPI.swift */; };
+		749376A5321C0F0A06906B0E844D9600 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 63245934B137D543D23B4C60D6DEF9A0 /* send_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7654165B9654676780976D845475508D /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B9B12EEF16DE2ECAB5C222380E5E34 /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		784A6077E54DBFDB40E9203FA4A02754 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F9EDD6CFEA5B1F5C33F35464C95F /* send_client_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D49541D38C4B153D32DCD9565FF51C9 /* MosquittoCallbackBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B86591B85E8C497EAF8B897F85F9DB /* MosquittoCallbackBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F118920A5CE15B987C319C8619DB059 /* Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C15CD9875104563ECA04881F0CDB /* Partition.swift */; };
+		7F7920885873ACA95A6EDE873AB78DDE /* OffsetFetchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3642B4C6C0D27E6FA4C94412E293EB4 /* OffsetFetchAPI.swift */; };
+		7FC9935BC216AA848E4BE94191710D3A /* MosquittoCallbackBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C4639D816F4040D0F36E23B2A8D4E /* MosquittoCallbackBridge.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		849218E3D37AC919202DA63B9B0C8533 /* Pods-MyChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86237BC3A9110ECE3C033CB7EB3F4217 /* Pods-MyChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86432B28015026AF7347C99E59F6DF21 /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 198FF9685A3E1EB2719B44E07D0FC1F9 /* tls_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8C00B8AF116B8B66CEF97D68262FBC29 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 94BA30B944716CE5053D0A2BE384CC84 /* read_handle_shared.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8CAC2FFF199E9F1F05D08BB6D8D232DC /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD9B5B4087C5484AB862772E802BDFD /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DE4E1E8A52F082CB3703B0F89B78831 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928D0FBE323005C3EABC68BE1C4FBBF /* Enumerations.swift */; };
+		A016E2338BAFA59FDC6815BD8D8F8679 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FDAB5B0F3E21A61D9072E96AFE0EB /* Connection.swift */; };
+		A51D8BD783CD0821B435D68C0721791D /* OffsetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A773F5FF0337299F8C9A3AEA4AE83 /* OffsetAPI.swift */; };
+		A683243234EFF48DD1047BD2DB8B670B /* srv_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = D5D0C6F1E3AF5824777AC24240F4FD1C /* srv_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A70180E1A400697136A46E71BC2D3A50 /* GroupMembershipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E01450463456C11CBD2597E636D5D1 /* GroupMembershipAPI.swift */; };
+		AA00463B87E35BC5A0FA095BF76E182C /* KafkaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E6EF99657BD939CE27054553E8D81 /* KafkaProtocol.swift */; };
+		ABB7CA5EF58FB8F3E7FC04897BD84BA6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF04729F627EDE644C14ACFE3567BCF /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD24268C1E41E926087FD6281209E48F /* GroupCoordinatorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5B0283A03DB0760CBCF1BEDABFE4D /* GroupCoordinatorAPI.swift */; };
+		AE28A15A76F999361CFC6724398B81CB /* Moscapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537DFE1163D0B027472B2A30EC1DB1B /* Moscapsule.swift */; };
+		B0E2CF21764507BFBA6ECF9F2876D121 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DDE0D9949E85E213B7614D86AA86A /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B4CD1E2CB40A3508B06E996316A2EB68 /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0F5A3C93E17605D0DF1E4C03B00191 /* logging_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5E774484239BA73713B82B054D6F630 /* socks_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 86A0375CC87F1D4B2D9CB4719AE9A875 /* socks_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B63F931A9C2B318721C46EBEE0BED221 /* CRC32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70818AAB3B3B40EE50FC6A6C34403BDA /* CRC32.swift */; };
+		B6522C21037263F356C6201151202E52 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D30B253CA8857BCA33D5FC9638A4A98 /* mosquitto.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BEA6E79C98E37E2FD5136CDD36A60183 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1AAB2C47AF90DE185F99D96CCF7E1 /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3175A41A3334C6272F809F006CAEDF6 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4AC7059A3732A9F10CAB3F0D8CFBA70 /* Franz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 677E5633E89AA0F6301F53BEC18BAC29 /* Franz-dummy.m */; };
+		C902FA9EB5731D91B9CF7BBCA5A7A7C9 /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = CBED5A674DE8F278571427CE9C169BB0 /* time_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D3A3D8E74ED3700201D4808AD21F0AC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D3AB60396C964106E2B849C80EB90252 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EA49A48DD4C40603049E101C0E2D896 /* messages_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D3F1B0608DE7D85B51CE6B11972E1066 /* Pods-MyChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E10B449645CA23BDAF7B7AD4A1D91A6 /* Pods-MyChat-dummy.m */; };
-		E450AF86CDC0491C95DAF250A81A7636 /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 84534030DCD420AAFB2F49A2E2CC47EE /* dummypthread.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E9A47951EA0FBA7D3702437266191255 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2FEB234FBB4A26AC80B2EC66B17CEE /* mosquitto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED526A1E756BDA6CCA29A0AE0A5A107D /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD709AC06D95BE0F259B1B370BBDE4 /* memory_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F007C949218C14EFD10AA6D6A7BEEBC9 /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 797EEA2EFC4CE3B4773951DF7C695AD0 /* will_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F927043B9260CAAF544A6E9C21A4BA76 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A63E7CDC823C0D81BD49EBE9578DF36 /* memory_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FCA70EC4BDC0EC41206AAF4B80590436 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 70CD6425B17EA285D89F44756ED8733B /* read_handle.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3AB60396C964106E2B849C80EB90252 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 625F7F7F25C54869F8619B2DDCDFBC51 /* messages_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DC6FC25845A3A830DB7BC5EAA245CBE0 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F14A42FFDAA2B1CCEAD61264B88B9E /* Assignment.swift */; };
+		E0C7476D3000BE030848786E5B978965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E450AF86CDC0491C95DAF250A81A7636 /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3BBA8D5955E8DAF94976D3B4920908 /* dummypthread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9A47951EA0FBA7D3702437266191255 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C3AF2AA3F1E1689AB2FA447067C728 /* mosquitto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED526A1E756BDA6CCA29A0AE0A5A107D /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 19E0F23691E5BD0DF3EC3CE9B2C352F4 /* memory_mosq.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F007C949218C14EFD10AA6D6A7BEEBC9 /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2FC97132071767B08FCA95D2D39C17 /* will_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F30E366BB887A579C23CC2AEE58BDAF8 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD3E86772D9B25E1A3F843EC6315E4 /* Variables.swift */; };
+		F31D58CE5CBB5E0B4D34AE257CE8B3D2 /* MetadataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE37B059F3A941DA110ECA51BDB8436 /* MetadataAPI.swift */; };
+		F3621326582FBB84C22CC5C1B64A84C0 /* MessageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE3BE9B600522E6E0B26BDEEF294FF /* MessageSet.swift */; };
+		F927043B9260CAAF544A6E9C21A4BA76 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAAC7236C19EB66C3183EF4853691D6 /* memory_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA638FBD86E687ACB6E19212B838BC3E /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6EB08312BEA98B39D645D107DF83CE /* Consumer.swift */; };
+		FCA70EC4BDC0EC41206AAF4B80590436 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 31935F20D568EFADF5C35BC75FE1A452 /* read_handle.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5DFF0C245E8A81145C4461CDB8944B39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
-			remoteInfo = KeychainSwift;
-		};
-		9A9C08481B01303B12B7812F6BD2FEFA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 877821A96E45797927C7853AA433B5B8;
-			remoteInfo = Moscapsule;
-		};
-		B23CBD3BC98D0EA60B18D1F054A8E0B0 /* PBXContainerItemProxy */ = {
+		2FCE9E1BA68D4E7283C91B6AD7509911 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
 			remoteInfo = "OpenSSL-Universal";
 		};
+		4406D3DB8C7E18984F574B9DF6218309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50DA77E856AF6251EA939F9EFB1C0AA;
+			remoteInfo = Franz;
+		};
+		8E37F35FEFD62A3BD9DC45402968EFD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		F425AFC85BDD2D6E2C03AE768E42CBED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 877821A96E45797927C7853AA433B5B8;
+			remoteInfo = Moscapsule;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0016FDECBC56318B868F84F94FFA8313 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
-		01A5561A033FC9B6025C1D726964F665 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
-		04C1B4D90E48C9946FAA141E5155D5CC /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
-		0778F2ACCB3CF1EED7784C41FE4BD9D5 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
-		09493A62D514899C4CA9C2B9ECE8CD5F /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = mosquitto/lib/util_mosq.h; sourceTree = "<group>"; };
-		0A63E7CDC823C0D81BD49EBE9578DF36 /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = mosquitto/lib/memory_mosq.h; sourceTree = "<group>"; };
-		0CCA1BF3E73FE9CC7EC52E4151519E9C /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
-		0CE6A64F08CA0F73384EAAA793727FC4 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
-		0FE3A3E8CE619825F0FE7F22CE39247A /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
-		12265AF77F8827F306C032BCCB2AC12A /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
-		15A3887C62E9F7BDE407A2716A2FDBA5 /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = mosquitto/lib/messages_mosq.h; sourceTree = "<group>"; };
-		174930C110F16E6933402A4D224C8B0B /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
-		18F41B9F327B7BDBA2A22A85E741AEDB /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
-		18FD3BE6677BB3941CDEABFD3C8EA612 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
-		1DE1B650B70CA98C55EF2CD9A234D23B /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
-		1EA49A48DD4C40603049E101C0E2D896 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = mosquitto/lib/messages_mosq.c; sourceTree = "<group>"; };
-		205C73DA4ECE484018622B5C260618B1 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
-		23C4745377FDB73302713D78B6E43A52 /* Moscapsule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moscapsule-umbrella.h"; sourceTree = "<group>"; };
-		242BD9962F8BA0F5D44CD7EC1628DC8A /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
-		2FB631D5B66EE7E6E0E8F9B4F058216B /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
-		30156F73391DF623AE9B048B4776214D /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
-		32E7FC560D9B023486D637D67D59B684 /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = mosquitto/lib/net_mosq.c; sourceTree = "<group>"; };
-		34CF2254771D5EA41F6A2C5F12DDC772 /* Moscapsule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moscapsule-dummy.m"; sourceTree = "<group>"; };
-		36FC9C8F6A08E166CDAB0515D98460EE /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		0367A5AAA00D5408E25C69DA6EFE959D /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
+		057491F5350B1E7790DCF84B0D43DF0F /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = mosquitto/lib/read_handle.h; sourceTree = "<group>"; };
+		06A6C7B26336046680FA99ABED1ACA02 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
+		09B9A5065BC907EE1FC9837FEAC2FA87 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
+		09BD03AFB338799A7FE4F8D421C29682 /* Moscapsule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moscapsule-dummy.m"; sourceTree = "<group>"; };
+		0BECEBE53F5637DAD627422036B02347 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		0C5CDDA25ECA6FF988C1B2473BC2761C /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		0D7AD0FDDBBFBBE2A20A15774E1691BE /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
+		0E8CF885E53D5702FD0EBD35C99B398D /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = net_mosq.c; path = mosquitto/lib/net_mosq.c; sourceTree = "<group>"; };
+		0F881888DB96E11739F933EE85A9EF7F /* Franz-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Franz-Info.plist"; sourceTree = "<group>"; };
+		12C3AF2AA3F1E1689AB2FA447067C728 /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = mosquitto/lib/mosquitto.h; sourceTree = "<group>"; };
+		1370145BA5CC4AB155A9472D60E0FDBC /* Broker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Broker.swift; path = Sources/Franz/Broker.swift; sourceTree = "<group>"; };
+		1532ACC71D43053B456431C6EB3117D6 /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = mosquitto/lib/util_mosq.h; sourceTree = "<group>"; };
+		15C209B6AFBE608E01D7B27065B523F9 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		1603B0B6542AA2732447272DB248E606 /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		18E9C9D662A7C210969D14E571ED8856 /* Moscapsule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moscapsule-umbrella.h"; sourceTree = "<group>"; };
+		198FF9685A3E1EB2719B44E07D0FC1F9 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tls_mosq.c; path = mosquitto/lib/tls_mosq.c; sourceTree = "<group>"; };
+		19E0F23691E5BD0DF3EC3CE9B2C352F4 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = memory_mosq.c; path = mosquitto/lib/memory_mosq.c; sourceTree = "<group>"; };
+		1AA1C5F96E394BB7AAB75DE475741635 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		1AB3DAC85F7245C0082633DB20910835 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
+		1C836019CAA737A5F67749FA81791477 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		1D1B73548BD6E547C16AEC796CBD35A3 /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = mosquitto/lib/send_mosq.h; sourceTree = "<group>"; };
+		1D890D6BD0919C7B12504F77011B60C0 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
+		21D5B0283A03DB0760CBCF1BEDABFE4D /* GroupCoordinatorAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupCoordinatorAPI.swift; path = Sources/Franz/GroupCoordinatorAPI.swift; sourceTree = "<group>"; };
+		28F0C76435932CAC868315281605E78F /* Franz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Franz.framework; path = Franz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3C4639D816F4040D0F36E23B2A8D4E /* MosquittoCallbackBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MosquittoCallbackBridge.m; path = Moscapsule/MosquittoCallbackBridge.m; sourceTree = "<group>"; };
+		2AF08EE0E51A6E0D962420596ADB178C /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = mosquitto/lib/messages_mosq.h; sourceTree = "<group>"; };
+		31935F20D568EFADF5C35BC75FE1A452 /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle.c; path = mosquitto/lib/read_handle.c; sourceTree = "<group>"; };
+		331955F94FE4881125793C9AA498686F /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
+		3334F406E72F400EE4539D44887C0542 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
+		3888FB867AC36C56A933C55555C6BD0F /* Franz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Franz.modulemap; sourceTree = "<group>"; };
 		39223ECD2CB0FDB70F7B78BD8AB35901 /* Pods-MyChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyChat-acknowledgements.plist"; sourceTree = "<group>"; };
-		3B3EDEFBF0AC7DCCE8238EBFF7EAC8A6 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
-		3BFD709AC06D95BE0F259B1B370BBDE4 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = mosquitto/lib/memory_mosq.c; sourceTree = "<group>"; };
-		3D9D62973B6C1B791BA3D6AB61A6F362 /* srv_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = srv_mosq.c; path = mosquitto/lib/srv_mosq.c; sourceTree = "<group>"; };
-		3DAE4D6CB4BAA9EB7AED24CDEE183619 /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = time_mosq.c; path = mosquitto/lib/time_mosq.c; sourceTree = "<group>"; };
-		40425275D54EC915FF3AB170E90793AD /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
-		455D0877930C8B94549FB8C933D13139 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
-		48931BEFC1D4B1B26EAD528081165F8A /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
-		48A1C2832DFA3CD71CB58F2C4F094B1D /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
-		4950FCA5E2B112C711AED4AC58ACB64F /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = mosquitto/lib/mosquitto.c; sourceTree = "<group>"; };
-		4B69B8E3CDBD63C140E438345753C3B0 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
-		4C8B3FC7101B3DB34742C4A7E7E35CEE /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
-		4D5A719CD638CEC4C5BEE48C5BF6D545 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
-		4DF74110265E57BA7733E1723C44AFAC /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
-		4DFCBEC7FC0AD2C3AA064DACBF3C5136 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
-		5551F8EF44D6900FB5C4788CCAFA8E29 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
-		5695D555A8F218A6C5462EDCD59053CF /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
-		5734AC9DC96CCE5A26456C57DED0AC0B /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
-		5C9820CF238FC66CCCD96C270F41AEE8 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = mosquitto/lib/time_mosq.h; sourceTree = "<group>"; };
-		5D246EEE6740339AADCD99C0DDF50C6B /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
-		5D691F4A7EC5422E0BAD61F26F4A4A7C /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Moscapsule/config.h; sourceTree = "<group>"; };
-		604031BDE615F8F4F39E6C06DB10DC23 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
-		60469194BAAD19C9089CD1BA10FECE3C /* MosquittoCallbackBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MosquittoCallbackBridge.h; path = Moscapsule/MosquittoCallbackBridge.h; sourceTree = "<group>"; };
-		6393D5135D58D28F4E71B8E821EA965C /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = mosquitto/lib/util_mosq.c; sourceTree = "<group>"; };
-		63C4A90A16FD54A6178EF76A110765CA /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = mosquitto/lib/logging_mosq.c; sourceTree = "<group>"; };
-		671681F8235016F45B53DD7E56BD13A2 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
-		67F33276626CD6A9FD78B2A2911863C7 /* MosquittoCallbackBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MosquittoCallbackBridge.m; path = Moscapsule/MosquittoCallbackBridge.m; sourceTree = "<group>"; };
-		6858C7998D6CDA7D84B157F075795B39 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
-		6CBE49D38E72BCCF9EB297184B0E4790 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
-		6EC75B9A989FEA2E905DB4F82709ED43 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
-		6ED21708FC09D71F0D7AE98CC82CE4F6 /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = mosquitto/lib/send_client_mosq.c; sourceTree = "<group>"; };
-		6F3BC9A98FB5FF7B647ADFC6AE73CA98 /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
-		70BC6DB4CE5D114AA0540A10F0EE88B4 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
-		70CD6425B17EA285D89F44756ED8733B /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = mosquitto/lib/read_handle.c; sourceTree = "<group>"; };
-		70FE9AD601E2538ABA3374589A6D3081 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
-		716A7FA8BC91E7180E7DCC541C470F65 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
-		71BD85D63FCBAB3411A01CE0A8173BB6 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
+		3A0F5A3C93E17605D0DF1E4C03B00191 /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = mosquitto/lib/logging_mosq.h; sourceTree = "<group>"; };
+		3B40759F0D6CEB0E6717D6A9EBB4258F /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
+		3CE63D89B3FF3CB4A2CD0887B38FB9E3 /* Moscapsule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moscapsule.release.xcconfig; sourceTree = "<group>"; };
+		3DE7BCA76A34F544CBCEE193F8502C5A /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = mosquitto/lib/mosquitto_internal.h; sourceTree = "<group>"; };
+		3E37DCCD2F17874CC52CACA35E7EB6B4 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
+		402D8586F16EB8E53C9EEED57A3AAD16 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
+		40FB22CC25BAC63CE742801337BD03DB /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
+		414886E542B154E654F53022C797EE85 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
+		4153C73A2D8FBE5B5945B5FF4B34E4F0 /* Franz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Franz-prefix.pch"; sourceTree = "<group>"; };
+		433078EFE67A62D9BDE77EDFD584B805 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
+		460F08C8024D6FE97F7C6DC82B5AA342 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
+		48B2B634B5C26DA32C97FF23F3E730BE /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
+		4A860BA3067A86838E425028DDB8331F /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		4D1A773F5FF0337299F8C9A3AEA4AE83 /* OffsetAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetAPI.swift; path = Sources/Franz/OffsetAPI.swift; sourceTree = "<group>"; };
+		50B9B12EEF16DE2ECAB5C222380E5E34 /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = mosquitto/lib/net_mosq.h; sourceTree = "<group>"; };
+		518E6EF99657BD939CE27054553E8D81 /* KafkaProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KafkaProtocol.swift; path = Sources/Franz/KafkaProtocol.swift; sourceTree = "<group>"; };
+		538AFA6510D9CB044973A942A70DD617 /* Franz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Franz.debug.xcconfig; sourceTree = "<group>"; };
+		539BF6CBC5F9D6E90B59327F21D87233 /* AdminAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdminAPI.swift; path = Sources/Franz/AdminAPI.swift; sourceTree = "<group>"; };
+		5537DFE1163D0B027472B2A30EC1DB1B /* Moscapsule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moscapsule.swift; path = Moscapsule/Moscapsule.swift; sourceTree = "<group>"; };
+		5697093D47E510295E126EA19945FB32 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Franz/Group.swift; sourceTree = "<group>"; };
+		5863242BBDA6B4AE24A51A2D4E4FE952 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
+		590F4DA036B9847FBBD062BD689B7B15 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
+		5BD9B5B4087C5484AB862772E802BDFD /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = mosquitto/lib/mqtt3_protocol.h; sourceTree = "<group>"; };
+		5C955240735F7A9C79874E0B534D2740 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		5EA336B41F6C85A80EF74637626AEF3A /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		5EBA93CAA0834F5918BB5FF7BFA86D9F /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		5F6473049F78323C20A0EE9226F25E71 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		5F7C846CFE9D56A492129ED85C12CA89 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		61150DADF8DBCB25D6F69F565E9B7636 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
+		6249EA4075D6E8284D086BB3E563B1BB /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
+		625F7F7F25C54869F8619B2DDCDFBC51 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = messages_mosq.c; path = mosquitto/lib/messages_mosq.c; sourceTree = "<group>"; };
+		62A4140EAE8C70B768749B62AF801AD4 /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = thread_mosq.c; path = mosquitto/lib/thread_mosq.c; sourceTree = "<group>"; };
+		63245934B137D543D23B4C60D6DEF9A0 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = send_mosq.c; path = mosquitto/lib/send_mosq.c; sourceTree = "<group>"; };
+		64F6F9EDD6CFEA5B1F5C33F35464C95F /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = send_client_mosq.c; path = mosquitto/lib/send_client_mosq.c; sourceTree = "<group>"; };
+		676F6B9534C27D48C5B55BD622C26CD2 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		677E5633E89AA0F6301F53BEC18BAC29 /* Franz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Franz-dummy.m"; sourceTree = "<group>"; };
+		6823E96996C1B2631B474843CF5B1ED3 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		696AD73AC528C784B1E2175240254B56 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
+		698E1048B4D3CED00B7FDBD2ADFE2887 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
+		6A6EB08312BEA98B39D645D107DF83CE /* Consumer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Consumer.swift; path = Sources/Franz/Consumer.swift; sourceTree = "<group>"; };
+		6C2FC97132071767B08FCA95D2D39C17 /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = mosquitto/lib/will_mosq.h; sourceTree = "<group>"; };
+		70818AAB3B3B40EE50FC6A6C34403BDA /* CRC32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC32.swift; path = Sources/Franz/Crypt/CRC32.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		744DDD4BA78184F70B1B914986396405 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
-		779D40B070063969E17F5DB947CF54BF /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
-		78B0989924B62698617C7227AD98AC4A /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = mosquitto/lib/will_mosq.c; sourceTree = "<group>"; };
-		797EEA2EFC4CE3B4773951DF7C695AD0 /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = mosquitto/lib/will_mosq.h; sourceTree = "<group>"; };
-		7B04ECBE01AEF250A270B8FDADE9CC0E /* Pods_MyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7BAE45F485BB318F9170252D477750 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tls_mosq.c; path = mosquitto/lib/tls_mosq.c; sourceTree = "<group>"; };
-		7D6023CB979F0A052B611176A754C91F /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
-		7DA0206FAE44F29F36D70BA937F496C8 /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
-		7DBBA261AF5B2D1D1818FE0885AC14EB /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		7530116AB6101C3B97835A58EC8D8F6C /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
+		7680EEE71A21F5FBA3F8D339331D0DE2 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		77CE3BE9B600522E6E0B26BDEEF294FF /* MessageSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageSet.swift; path = Sources/Franz/MessageSet.swift; sourceTree = "<group>"; };
+		7B04ECBE01AEF250A270B8FDADE9CC0E /* Pods_MyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyChat.framework; path = "Pods-MyChat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E10B449645CA23BDAF7B7AD4A1D91A6 /* Pods-MyChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyChat-dummy.m"; sourceTree = "<group>"; };
-		7F5AD7DAF5B2280B24632B045D8A56C3 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
-		8074FEA495FF981DCBFE6D126CFFB18C /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
-		84534030DCD420AAFB2F49A2E2CC47EE /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = mosquitto/lib/dummypthread.h; sourceTree = "<group>"; };
+		7F5C7DC4EBD2E981A3DC765AEC18FE4F /* OldConsumers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OldConsumers.swift; path = Sources/Franz/OldConsumers.swift; sourceTree = "<group>"; };
+		8472B1500C2CBD637F0E7078F47AC47A /* Franz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Franz-umbrella.h"; sourceTree = "<group>"; };
+		8498D61E11C98271599F2939D30DAA63 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
 		86237BC3A9110ECE3C033CB7EB3F4217 /* Pods-MyChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyChat-umbrella.h"; sourceTree = "<group>"; };
-		8B00D835A7443F92844541F7845D2E92 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
-		8E07E9C06583813B12D112C7E39A5967 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
-		9156D51EC95E7F2A3B38F3653EF49521 /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = mosquitto/lib/thread_mosq.c; sourceTree = "<group>"; };
-		937BCC3FA814429A4479A6CEE374450E /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
-		9381C5A24657D6592787C0CB83667DE4 /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = mosquitto/lib/read_handle_client.c; sourceTree = "<group>"; };
-		93A1ABB32978D83A1748B9ADF02F0880 /* Moscapsule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moscapsule-Info.plist"; sourceTree = "<group>"; };
-		940206969A8820DE42EAC337B22951DE /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
-		97038F1C7F2BEDF5B199F478A64BE57E /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = mosquitto/lib/mqtt3_protocol.h; sourceTree = "<group>"; };
-		9AA3CE04700C6FE8A8F17CDCAE541B3C /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
-		9B0EC9EB45FB4FE062B0763912C072DC /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A13B238EAE44B401C4D6BF961007D87F /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
-		A276A359E7ECE4CD4ADA858FF79E6D76 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
-		A501D2C40675F6D6DBD8AB83EA88AEC6 /* socks_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socks_mosq.h; path = mosquitto/lib/socks_mosq.h; sourceTree = "<group>"; };
-		A79506F7900E5023D9144B46D6ADD6B1 /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
-		A7C5B37D27745D399DFB462383B8BECE /* socks_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = socks_mosq.c; path = mosquitto/lib/socks_mosq.c; sourceTree = "<group>"; };
-		AADD721D5C7395E0E484AA535AAD051E /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
-		ACB0CEA9114B22B86561A032C5FEA75D /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
-		ACB8D76F0812C2901B8EC41891AD9B01 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
-		AD6580189BFFA79E3AF6C4C7BC641284 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
-		B05411C0ABF7F5CA4D0BA028AEC96C7B /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		B60625CE2FACC2624E724447009966D9 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = mosquitto/lib/send_mosq.c; sourceTree = "<group>"; };
-		B63D3B3EFF21786F5FF23E42AB941992 /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		8627D38024B1D0D84184BBFDB68F0162 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
+		86A0375CC87F1D4B2D9CB4719AE9A875 /* socks_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = socks_mosq.c; path = mosquitto/lib/socks_mosq.c; sourceTree = "<group>"; };
+		86FA5BC02C9B433733287E1B747FAD25 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
+		894C8255E6747ACAC4F2B976B2D3BA30 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		8A01E83E7F838B7E7F4F827FF3ED07B7 /* Moscapsule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moscapsule.debug.xcconfig; sourceTree = "<group>"; };
+		8A5B2DCA72861AE2940E49C00DE92A85 /* Moscapsule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Moscapsule.h; path = Moscapsule/Moscapsule.h; sourceTree = "<group>"; };
+		8C595F06B6F0DDFC6A8346913562974B /* ProduceAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProduceAPI.swift; path = Sources/Franz/ProduceAPI.swift; sourceTree = "<group>"; };
+		8D30B253CA8857BCA33D5FC9638A4A98 /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mosquitto.c; path = mosquitto/lib/mosquitto.c; sourceTree = "<group>"; };
+		8DF04729F627EDE644C14ACFE3567BCF /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Moscapsule/config.h; sourceTree = "<group>"; };
+		8E9DDE0D9949E85E213B7614D86AA86A /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle_client.c; path = mosquitto/lib/read_handle_client.c; sourceTree = "<group>"; };
+		8F281983BBE6D8F37A5F9443DAE47A6E /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
+		8F601685700664CB6EAD55A69598BF76 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		91055FA7CCB24CB7950A4EDB6CF929D5 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		9343BC14F10676FCC673B5E0BA2A384E /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = mosquitto/lib/tls_mosq.h; sourceTree = "<group>"; };
+		94335FDE5677B016A885DA90ED43A9F3 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		94BA30B944716CE5053D0A2BE384CC84 /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle_shared.c; path = mosquitto/lib/read_handle_shared.c; sourceTree = "<group>"; };
+		956FDAB5B0F3E21A61D9072E96AFE0EB /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Franz/Connection.swift; sourceTree = "<group>"; };
+		964653E46C8DB6C7EE578C3A3ECED30D /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
+		9928D0FBE323005C3EABC68BE1C4FBBF /* Enumerations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enumerations.swift; path = Sources/Franz/Enumerations.swift; sourceTree = "<group>"; };
+		9A3CE51DAEF694A33363D328458BBC4D /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		9B783E68DFCCD3526604C55B4AAC940E /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
+		9CEFC8FD9DA87C371AD1B3CE2936D1B6 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E5587D777F867EF408E5BF8E82A0BA9 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
+		9E82071C05FC8B6078F32E95FF892BA8 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		9ED1AAB2C47AF90DE185F99D96CCF7E1 /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = logging_mosq.c; path = mosquitto/lib/logging_mosq.c; sourceTree = "<group>"; };
+		9F305FDB0B6EB2BD1556FA9FBBC63C12 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
+		9FFDB8AEA10536073C95E25DAEA34A8F /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		9FFF13B8D11B7F5EF16B7C673F7A5051 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
+		A0E01450463456C11CBD2597E636D5D1 /* GroupMembershipAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupMembershipAPI.swift; path = Sources/Franz/GroupMembershipAPI.swift; sourceTree = "<group>"; };
+		A147CBD09B616BFED368808A84875B37 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
+		A14953AB580302610EA76A34F28947DB /* Moscapsule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moscapsule-Info.plist"; sourceTree = "<group>"; };
+		A37848B49854E120825181387566B1E5 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
+		A47FCD675BECFDDC380CDB25DEEA9D37 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
+		A4EF319102B22EF5E3D82D1957CD5DBD /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
+		AA997F8EE6096F29D9D6524C61D2A005 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
+		AD011B719387A2DC556C966AF1597114 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
+		AD448EB89E55536848ADFB13F20EF0FA /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		AE985DCE03285847600774B72E330F09 /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = will_mosq.c; path = mosquitto/lib/will_mosq.c; sourceTree = "<group>"; };
+		AF2E0C673C86E9FCA55366460B519E1B /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		B151AAF33977E48AD32C074E35234DDA /* FetchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchAPI.swift; path = Sources/Franz/FetchAPI.swift; sourceTree = "<group>"; };
+		B5B86591B85E8C497EAF8B897F85F9DB /* MosquittoCallbackBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MosquittoCallbackBridge.h; path = Moscapsule/MosquittoCallbackBridge.h; sourceTree = "<group>"; };
 		B70F647714E3FAB232D9FA7D22F3EA58 /* Pods-MyChat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyChat-Info.plist"; sourceTree = "<group>"; };
-		B83FD0EA2965D1519A58AADCB7C6F898 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
-		BA642E8E89BD8E8AD8E3AD12D355D7D7 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
-		BA8D612445C4C1D4641A89DC3607C6CD /* Moscapsule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Moscapsule.h; path = Moscapsule/Moscapsule.h; sourceTree = "<group>"; };
-		BB641D0FBFD3960003C7A383DFE1FDE2 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
-		BD4993EBDB76A6628F37292CBBA053B9 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
-		BF2FEB234FBB4A26AC80B2EC66B17CEE /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = mosquitto/lib/mosquitto.h; sourceTree = "<group>"; };
-		C01940B3C3BE612A53C37A14AF4B23DD /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = mosquitto/lib/mosquitto_internal.h; sourceTree = "<group>"; };
-		C1FA07F66CB0BC04C75A6660313CD5F7 /* Moscapsule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Moscapsule.modulemap; sourceTree = "<group>"; };
-		C2BC24F31FF616569B8679925BBB13DB /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
-		C43A80EBDDECD429C3CDCCE71B4392A2 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
-		C6F390D5BF0C7340D3165E76854FA230 /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = mosquitto/lib/send_mosq.h; sourceTree = "<group>"; };
-		C791B8CF33F3F4A1AF119BD0C1D7C610 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
-		C7DFC70E1A63E95B9C68EE8090ADFCA8 /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = mosquitto/lib/read_handle_shared.c; sourceTree = "<group>"; };
-		C9B92FF8B2CCA0858D990B339A7A9D0C /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = mosquitto/lib/tls_mosq.h; sourceTree = "<group>"; };
-		CA357E66EE62821C1A6973B6E8117203 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		B785C7FC1C1C2B880982C33EAE698C90 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
+		B813E7BCBA98CDAB114F42C1AFDFBBA5 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
+		BA8EDBED2795A120DFA6E81E6653A641 /* KafkaRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KafkaRequest.swift; path = Sources/Franz/KafkaRequest.swift; sourceTree = "<group>"; };
+		BC922A65B39C9DCF92DE59265F216867 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = util_mosq.c; path = mosquitto/lib/util_mosq.c; sourceTree = "<group>"; };
+		BE9BC3B80B4086C5BD5672F1E45095E0 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
+		C0FD3E86772D9B25E1A3F843EC6315E4 /* Variables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variables.swift; path = Sources/Franz/Variables.swift; sourceTree = "<group>"; };
+		C2BB2D2F154CD2DB8A61CFBDAE7EC3DB /* Moscapsule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moscapsule-prefix.pch"; sourceTree = "<group>"; };
+		C45579B360CC372CAD43CB0C240800BD /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
+		C8D13211CF2C9475AAF7E7324408337B /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
 		CAA4570F39F0D4F0FDEC41EBC7D482FF /* Pods-MyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyChat.release.xcconfig"; sourceTree = "<group>"; };
-		CB6D32F80A9FEC982448B25462B94EAE /* Moscapsule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moscapsule.release.xcconfig; sourceTree = "<group>"; };
-		CC194607C5972FCCAF4C4625B32A18A0 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
-		CC4D4D14E9FF37669278893A44304956 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
-		CD47612714FCCD730271A330451A3243 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
-		D29B4C21CC33B149CC94B04961A8862F /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		CBED5A674DE8F278571427CE9C169BB0 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = mosquitto/lib/time_mosq.h; sourceTree = "<group>"; };
+		CD2D7CDCA241810BD5E2C3A5A9569BE2 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
+		CEE5EC5793EA08780717B0E594428F62 /* Topic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Topic.swift; path = Sources/Franz/Topic.swift; sourceTree = "<group>"; };
+		D3642B4C6C0D27E6FA4C94412E293EB4 /* OffsetFetchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetFetchAPI.swift; path = Sources/Franz/OffsetFetchAPI.swift; sourceTree = "<group>"; };
+		D38A4323356F5DA82E8286C739FD9993 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
 		D400B8791F613DE67489CC281C712850 /* Pods-MyChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyChat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D5EE77A5BD6A0934C78A172B3BFB7F49 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
-		D7BFEC265B0693CEEF3062688A316CBA /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
-		DAB15272DF3C70C47891001D25295CFE /* Moscapsule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moscapsule.debug.xcconfig; sourceTree = "<group>"; };
-		DF32D16DDE82138CBB33C137C9DB6C0A /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
-		E1146887341D713C6BED1E0FFC5AFA9F /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
-		E1F4792D8185B071B2C055497875FD2E /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
+		D5C94E929489EF3EC15B21DF48FFE48A /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		D5D0C6F1E3AF5824777AC24240F4FD1C /* srv_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = srv_mosq.c; path = mosquitto/lib/srv_mosq.c; sourceTree = "<group>"; };
+		D65C9C567FF79A31D08A5A61943FAC5C /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		D73923AE9DDF18FE5158C0F8C81BC561 /* KafkaResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KafkaResponse.swift; path = Sources/Franz/KafkaResponse.swift; sourceTree = "<group>"; };
+		D87BD12E78F00996FB471FEA564FAE3C /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		D9C4332FA0C9F7B6217AC984B0525382 /* Franz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Franz.release.xcconfig; sourceTree = "<group>"; };
+		DAB79601ED249D00CD261CF7EAF34B5E /* Cluster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cluster.swift; path = Sources/Franz/Cluster.swift; sourceTree = "<group>"; };
+		DBF81CD8CB100E0C1FEA654332A517AB /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		DC5D7825C6A498EE6FB3F41686A2B7A2 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
+		DDCCB2570DEF04492DC7FD094855766A /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = time_mosq.c; path = mosquitto/lib/time_mosq.c; sourceTree = "<group>"; };
+		DFAAC7236C19EB66C3183EF4853691D6 /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = mosquitto/lib/memory_mosq.h; sourceTree = "<group>"; };
 		E33364619BE1FFEA257B6B5DC6AE5211 /* Pods-MyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyChat.debug.xcconfig"; sourceTree = "<group>"; };
-		E3D0A82DCBF5F8E0296E6A66B6FBD6FB /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
-		E3FF890633932DCF33B922A7D27FE35B /* Moscapsule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moscapsule.swift; path = Moscapsule/Moscapsule.swift; sourceTree = "<group>"; };
-		E764B3880AA66CBD5D56E764424A1A4E /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = mosquitto/lib/read_handle.h; sourceTree = "<group>"; };
-		E8F962B121BBB87947F14E6FBB853B17 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
-		E92448B0218792A834A011BDDBA8A8BC /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = mosquitto/lib/logging_mosq.h; sourceTree = "<group>"; };
-		E98944B620FA59111AD699F26D5180C8 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
-		EDB7686812F2DA1667A5F8C69B017A16 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
-		EDE00AB6EF669B3785F930D4A744B8D1 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE26F229D988EB0774938A73B9AA547E /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
+		E3EDB3C17F79D31FCC336E2A4446A33F /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		E487443E421D14472878B59528B67780 /* OffsetCommitAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetCommitAPI.swift; path = Sources/Franz/OffsetCommitAPI.swift; sourceTree = "<group>"; };
+		E7C69307227560EB0749D85106D795B0 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		E7CA17E6663253ED5709B0AD8603305C /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
+		E8F14A42FFDAA2B1CCEAD61264B88B9E /* Assignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assignment.swift; path = Sources/Franz/Assignment.swift; sourceTree = "<group>"; };
+		E92EB93D24CB3BE272A1FB0A5FF231DF /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
+		EA3BBA8D5955E8DAF94976D3B4920908 /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = mosquitto/lib/dummypthread.h; sourceTree = "<group>"; };
+		EB9982B7F03C225DE1707B05C949259E /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		EBF4C15CD9875104563ECA04881F0CDB /* Partition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Partition.swift; path = Sources/Franz/Partition.swift; sourceTree = "<group>"; };
+		EDE00AB6EF669B3785F930D4A744B8D1 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moscapsule.framework; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD2835CCEBE39B89CB0592BF73ACE42 /* Pods-MyChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyChat.modulemap"; sourceTree = "<group>"; };
 		F01DAB6D2FB1A5CFE7C40E96540DE458 /* Pods-MyChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyChat-frameworks.sh"; sourceTree = "<group>"; };
-		F45F98FF300FEC243764EE3D55E8DA5A /* Moscapsule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moscapsule-prefix.pch"; sourceTree = "<group>"; };
-		F4F59F1160831D56D2DB9F22EEC148FA /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
-		F737E09BD56784B0179BC4F89DF28EFB /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
-		F73F13D9776B8A60A77BF43556123DAC /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = mosquitto/lib/net_mosq.h; sourceTree = "<group>"; };
-		F8731B26382B1541E60D430C3C8CBEA3 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
-		FF0C74943F1BEBAD965D32F25F0D1A22 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		F038398E6FA51C2AA626AAF904B728F5 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
+		F0D305BF854DCD90A3B6A624FA1A1379 /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
+		F3175A41A3334C6272F809F006CAEDF6 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		F3A94E431A17037C7E769BD43B31BBB2 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		F5B2FE4D304C7B88BCAC09BB153C949A /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
+		F5D08F5B2D5BB3FED1F2A3E0FF266F7C /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		F807AC59D1587529BBAEDC3C445941CA /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
+		FA1E2630888E3B9ABC365AF85CE381C6 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
+		FBE37B059F3A941DA110ECA51BDB8436 /* MetadataAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataAPI.swift; path = Sources/Franz/MetadataAPI.swift; sourceTree = "<group>"; };
+		FC6FD81C9865AF153892E1E6A1F1FABD /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
+		FCF32BA2C18D0674CA1B6121CEF1FCFE /* Moscapsule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Moscapsule.modulemap; sourceTree = "<group>"; };
+		FFE8D77DFF3173B333F3344D3B75AB91 /* socks_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socks_mosq.h; path = mosquitto/lib/socks_mosq.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,11 +321,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88F0BA044BABC13F4989CEC4A26811AF /* Frameworks */ = {
+		61D178F3CDC3063BCA39FB442936B557 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDA7B1420FEF0DC0940A046F3EEFD28 /* Foundation.framework in Frameworks */,
+				E0C7476D3000BE030848786E5B978965 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,32 +337,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		943DB1DA937B64A91CD5AC55F65D5E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D719F0690C979B93C03C48EFEFD012A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13E20668F91FF9573C400E8846CFCD5E /* KeychainSwift */ = {
+		11825EA7E9EC1C4EC0DE12320B5827CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B0EC9EB45FB4FE062B0763912C072DC /* KeychainSwift.swift */,
-				18FD3BE6677BB3941CDEABFD3C8EA612 /* KeychainSwiftAccessOptions.swift */,
-				4DF74110265E57BA7733E1723C44AFAC /* TegKeychainConstants.swift */,
-				FFB15E5D748BD2D857321F34A3081A97 /* Support Files */,
-			);
-			path = KeychainSwift;
-			sourceTree = "<group>";
-		};
-		216DCC3CA05800FA8043DE5398274F18 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7DBBA261AF5B2D1D1818FE0885AC14EB /* libcrypto.a */,
-				4B69B8E3CDBD63C140E438345753C3B0 /* libssl.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		34E5C7BE3860641D8508252734EEDF21 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				28F0C76435932CAC868315281605E78F /* Franz.framework */,
 				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
 				EDE00AB6EF669B3785F930D4A744B8D1 /* Moscapsule.framework */,
 				7B04ECBE01AEF250A270B8FDADE9CC0E /* Pods_MyChat.framework */,
@@ -303,14 +359,86 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		456FF09FA76151FC6912BC0EF9C5BA2B /* Support Files */ = {
+		15457AA68527002509E17B9D0942F6A8 /* KeychainSwift */ = {
 			isa = PBXGroup;
 			children = (
-				6F3BC9A98FB5FF7B647ADFC6AE73CA98 /* OpenSSL-Universal.debug.xcconfig */,
-				DF32D16DDE82138CBB33C137C9DB6C0A /* OpenSSL-Universal.release.xcconfig */,
+				894C8255E6747ACAC4F2B976B2D3BA30 /* KeychainSwift.swift */,
+				DBF81CD8CB100E0C1FEA654332A517AB /* KeychainSwiftAccessOptions.swift */,
+				676F6B9534C27D48C5B55BD622C26CD2 /* TegKeychainConstants.swift */,
+				8E3A0CF5D75793523B3E27AF1EEC110B /* Support Files */,
+			);
+			name = KeychainSwift;
+			path = KeychainSwift;
+			sourceTree = "<group>";
+		};
+		25078075CFF8CE0E6ABDBD05933A78F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCF32BA2C18D0674CA1B6121CEF1FCFE /* Moscapsule.modulemap */,
+				09BD03AFB338799A7FE4F8D421C29682 /* Moscapsule-dummy.m */,
+				A14953AB580302610EA76A34F28947DB /* Moscapsule-Info.plist */,
+				C2BB2D2F154CD2DB8A61CFBDAE7EC3DB /* Moscapsule-prefix.pch */,
+				18E9C9D662A7C210969D14E571ED8856 /* Moscapsule-umbrella.h */,
+				8A01E83E7F838B7E7F4F827FF3ED07B7 /* Moscapsule.debug.xcconfig */,
+				3CE63D89B3FF3CB4A2CD0887B38FB9E3 /* Moscapsule.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/OpenSSL-Universal";
+			path = "../Target Support Files/Moscapsule";
+			sourceTree = "<group>";
+		};
+		2DD048526B0D4E89358E2281E1857A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5CDDA25ECA6FF988C1B2473BC2761C /* libcrypto.a */,
+				86FA5BC02C9B433733287E1B747FAD25 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4933941120DB8365F2DE6DC8474B30AD /* Moscapsule */ = {
+			isa = PBXGroup;
+			children = (
+				8DF04729F627EDE644C14ACFE3567BCF /* config.h */,
+				EA3BBA8D5955E8DAF94976D3B4920908 /* dummypthread.h */,
+				9ED1AAB2C47AF90DE185F99D96CCF7E1 /* logging_mosq.c */,
+				3A0F5A3C93E17605D0DF1E4C03B00191 /* logging_mosq.h */,
+				19E0F23691E5BD0DF3EC3CE9B2C352F4 /* memory_mosq.c */,
+				DFAAC7236C19EB66C3183EF4853691D6 /* memory_mosq.h */,
+				625F7F7F25C54869F8619B2DDCDFBC51 /* messages_mosq.c */,
+				2AF08EE0E51A6E0D962420596ADB178C /* messages_mosq.h */,
+				8A5B2DCA72861AE2940E49C00DE92A85 /* Moscapsule.h */,
+				5537DFE1163D0B027472B2A30EC1DB1B /* Moscapsule.swift */,
+				8D30B253CA8857BCA33D5FC9638A4A98 /* mosquitto.c */,
+				12C3AF2AA3F1E1689AB2FA447067C728 /* mosquitto.h */,
+				3DE7BCA76A34F544CBCEE193F8502C5A /* mosquitto_internal.h */,
+				B5B86591B85E8C497EAF8B897F85F9DB /* MosquittoCallbackBridge.h */,
+				2A3C4639D816F4040D0F36E23B2A8D4E /* MosquittoCallbackBridge.m */,
+				5BD9B5B4087C5484AB862772E802BDFD /* mqtt3_protocol.h */,
+				0E8CF885E53D5702FD0EBD35C99B398D /* net_mosq.c */,
+				50B9B12EEF16DE2ECAB5C222380E5E34 /* net_mosq.h */,
+				31935F20D568EFADF5C35BC75FE1A452 /* read_handle.c */,
+				057491F5350B1E7790DCF84B0D43DF0F /* read_handle.h */,
+				8E9DDE0D9949E85E213B7614D86AA86A /* read_handle_client.c */,
+				94BA30B944716CE5053D0A2BE384CC84 /* read_handle_shared.c */,
+				64F6F9EDD6CFEA5B1F5C33F35464C95F /* send_client_mosq.c */,
+				63245934B137D543D23B4C60D6DEF9A0 /* send_mosq.c */,
+				1D1B73548BD6E547C16AEC796CBD35A3 /* send_mosq.h */,
+				86A0375CC87F1D4B2D9CB4719AE9A875 /* socks_mosq.c */,
+				FFE8D77DFF3173B333F3344D3B75AB91 /* socks_mosq.h */,
+				D5D0C6F1E3AF5824777AC24240F4FD1C /* srv_mosq.c */,
+				62A4140EAE8C70B768749B62AF801AD4 /* thread_mosq.c */,
+				DDCCB2570DEF04492DC7FD094855766A /* time_mosq.c */,
+				CBED5A674DE8F278571427CE9C169BB0 /* time_mosq.h */,
+				198FF9685A3E1EB2719B44E07D0FC1F9 /* tls_mosq.c */,
+				9343BC14F10676FCC673B5E0BA2A384E /* tls_mosq.h */,
+				BC922A65B39C9DCF92DE59265F216867 /* util_mosq.c */,
+				1532ACC71D43053B456431C6EB3117D6 /* util_mosq.h */,
+				AE985DCE03285847600774B72E330F09 /* will_mosq.c */,
+				6C2FC97132071767B08FCA95D2D39C17 /* will_mosq.h */,
+				25078075CFF8CE0E6ABDBD05933A78F0 /* Support Files */,
+			);
+			name = Moscapsule;
+			path = Moscapsule;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -321,19 +449,149 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A410308F5FD672FD7F82986CDA6262BB /* Support Files */ = {
+		7009A858510B17A186FFC113137650CC /* OpenSSL-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				C1FA07F66CB0BC04C75A6660313CD5F7 /* Moscapsule.modulemap */,
-				34CF2254771D5EA41F6A2C5F12DDC772 /* Moscapsule-dummy.m */,
-				93A1ABB32978D83A1748B9ADF02F0880 /* Moscapsule-Info.plist */,
-				F45F98FF300FEC243764EE3D55E8DA5A /* Moscapsule-prefix.pch */,
-				23C4745377FDB73302713D78B6E43A52 /* Moscapsule-umbrella.h */,
-				DAB15272DF3C70C47891001D25295CFE /* Moscapsule.debug.xcconfig */,
-				CB6D32F80A9FEC982448B25462B94EAE /* Moscapsule.release.xcconfig */,
+				3B40759F0D6CEB0E6717D6A9EBB4258F /* aes.h */,
+				8F601685700664CB6EAD55A69598BF76 /* asn1.h */,
+				5F7C846CFE9D56A492129ED85C12CA89 /* asn1_mac.h */,
+				0D7AD0FDDBBFBBE2A20A15774E1691BE /* asn1t.h */,
+				94335FDE5677B016A885DA90ED43A9F3 /* bio.h */,
+				FA1E2630888E3B9ABC365AF85CE381C6 /* blowfish.h */,
+				61150DADF8DBCB25D6F69F565E9B7636 /* bn.h */,
+				DC5D7825C6A498EE6FB3F41686A2B7A2 /* buffer.h */,
+				C45579B360CC372CAD43CB0C240800BD /* camellia.h */,
+				E92EB93D24CB3BE272A1FB0A5FF231DF /* cast.h */,
+				5EA336B41F6C85A80EF74637626AEF3A /* cmac.h */,
+				E3EDB3C17F79D31FCC336E2A4446A33F /* cms.h */,
+				AD011B719387A2DC556C966AF1597114 /* comp.h */,
+				698E1048B4D3CED00B7FDBD2ADFE2887 /* conf.h */,
+				9E5587D777F867EF408E5BF8E82A0BA9 /* conf_api.h */,
+				AD448EB89E55536848ADFB13F20EF0FA /* crypto.h */,
+				8498D61E11C98271599F2939D30DAA63 /* des.h */,
+				D5C94E929489EF3EC15B21DF48FFE48A /* des_old.h */,
+				BE9BC3B80B4086C5BD5672F1E45095E0 /* dh.h */,
+				F5D08F5B2D5BB3FED1F2A3E0FF266F7C /* dsa.h */,
+				F5B2FE4D304C7B88BCAC09BB153C949A /* dso.h */,
+				1D890D6BD0919C7B12504F77011B60C0 /* dtls1.h */,
+				9B783E68DFCCD3526604C55B4AAC940E /* e_os2.h */,
+				7530116AB6101C3B97835A58EC8D8F6C /* ebcdic.h */,
+				6823E96996C1B2631B474843CF5B1ED3 /* ec.h */,
+				5863242BBDA6B4AE24A51A2D4E4FE952 /* ecdh.h */,
+				402D8586F16EB8E53C9EEED57A3AAD16 /* ecdsa.h */,
+				A147CBD09B616BFED368808A84875B37 /* engine.h */,
+				AA997F8EE6096F29D9D6524C61D2A005 /* err.h */,
+				1AA1C5F96E394BB7AAB75DE475741635 /* evp.h */,
+				A37848B49854E120825181387566B1E5 /* hmac.h */,
+				40FB22CC25BAC63CE742801337BD03DB /* idea.h */,
+				F3A94E431A17037C7E769BD43B31BBB2 /* krb5_asn.h */,
+				A4EF319102B22EF5E3D82D1957CD5DBD /* kssl.h */,
+				3E37DCCD2F17874CC52CACA35E7EB6B4 /* lhash.h */,
+				A47FCD675BECFDDC380CDB25DEEA9D37 /* md4.h */,
+				E7C69307227560EB0749D85106D795B0 /* md5.h */,
+				FC6FD81C9865AF153892E1E6A1F1FABD /* mdc2.h */,
+				B785C7FC1C1C2B880982C33EAE698C90 /* modes.h */,
+				D87BD12E78F00996FB471FEA564FAE3C /* obj_mac.h */,
+				9FFDB8AEA10536073C95E25DAEA34A8F /* objects.h */,
+				91055FA7CCB24CB7950A4EDB6CF929D5 /* ocsp.h */,
+				5F6473049F78323C20A0EE9226F25E71 /* opensslconf.h */,
+				414886E542B154E654F53022C797EE85 /* opensslv.h */,
+				9E82071C05FC8B6078F32E95FF892BA8 /* ossl_typ.h */,
+				7680EEE71A21F5FBA3F8D339331D0DE2 /* pem.h */,
+				1C836019CAA737A5F67749FA81791477 /* pem2.h */,
+				9CEFC8FD9DA87C371AD1B3CE2936D1B6 /* pkcs12.h */,
+				AF2E0C673C86E9FCA55366460B519E1B /* pkcs7.h */,
+				433078EFE67A62D9BDE77EDFD584B805 /* pqueue.h */,
+				4A860BA3067A86838E425028DDB8331F /* rand.h */,
+				460F08C8024D6FE97F7C6DC82B5AA342 /* rc2.h */,
+				6249EA4075D6E8284D086BB3E563B1BB /* rc4.h */,
+				1AB3DAC85F7245C0082633DB20910835 /* ripemd.h */,
+				09B9A5065BC907EE1FC9837FEAC2FA87 /* rsa.h */,
+				590F4DA036B9847FBBD062BD689B7B15 /* safestack.h */,
+				5EBA93CAA0834F5918BB5FF7BFA86D9F /* seed.h */,
+				CD2D7CDCA241810BD5E2C3A5A9569BE2 /* sha.h */,
+				8627D38024B1D0D84184BBFDB68F0162 /* srp.h */,
+				9FFF13B8D11B7F5EF16B7C673F7A5051 /* srtp.h */,
+				F038398E6FA51C2AA626AAF904B728F5 /* ssl.h */,
+				9F305FDB0B6EB2BD1556FA9FBBC63C12 /* ssl2.h */,
+				15C209B6AFBE608E01D7B27065B523F9 /* ssl23.h */,
+				06A6C7B26336046680FA99ABED1ACA02 /* ssl3.h */,
+				48B2B634B5C26DA32C97FF23F3E730BE /* stack.h */,
+				F807AC59D1587529BBAEDC3C445941CA /* symhacks.h */,
+				696AD73AC528C784B1E2175240254B56 /* tls1.h */,
+				331955F94FE4881125793C9AA498686F /* ts.h */,
+				B813E7BCBA98CDAB114F42C1AFDFBBA5 /* txt_db.h */,
+				D38A4323356F5DA82E8286C739FD9993 /* ui.h */,
+				3334F406E72F400EE4539D44887C0542 /* ui_compat.h */,
+				8F281983BBE6D8F37A5F9443DAE47A6E /* whrlpool.h */,
+				964653E46C8DB6C7EE578C3A3ECED30D /* x509.h */,
+				0BECEBE53F5637DAD627422036B02347 /* x509_vfy.h */,
+				0367A5AAA00D5408E25C69DA6EFE959D /* x509v3.h */,
+				2DD048526B0D4E89358E2281E1857A25 /* Frameworks */,
+				E4840AD25909F5621958D9C629948D02 /* Support Files */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		7A0E0C0E240A57A9BDC40DD65853B271 /* Franz */ = {
+			isa = PBXGroup;
+			children = (
+				539BF6CBC5F9D6E90B59327F21D87233 /* AdminAPI.swift */,
+				E8F14A42FFDAA2B1CCEAD61264B88B9E /* Assignment.swift */,
+				1370145BA5CC4AB155A9472D60E0FDBC /* Broker.swift */,
+				DAB79601ED249D00CD261CF7EAF34B5E /* Cluster.swift */,
+				956FDAB5B0F3E21A61D9072E96AFE0EB /* Connection.swift */,
+				6A6EB08312BEA98B39D645D107DF83CE /* Consumer.swift */,
+				70818AAB3B3B40EE50FC6A6C34403BDA /* CRC32.swift */,
+				9928D0FBE323005C3EABC68BE1C4FBBF /* Enumerations.swift */,
+				B151AAF33977E48AD32C074E35234DDA /* FetchAPI.swift */,
+				5697093D47E510295E126EA19945FB32 /* Group.swift */,
+				21D5B0283A03DB0760CBCF1BEDABFE4D /* GroupCoordinatorAPI.swift */,
+				A0E01450463456C11CBD2597E636D5D1 /* GroupMembershipAPI.swift */,
+				518E6EF99657BD939CE27054553E8D81 /* KafkaProtocol.swift */,
+				BA8EDBED2795A120DFA6E81E6653A641 /* KafkaRequest.swift */,
+				D73923AE9DDF18FE5158C0F8C81BC561 /* KafkaResponse.swift */,
+				77CE3BE9B600522E6E0B26BDEEF294FF /* MessageSet.swift */,
+				FBE37B059F3A941DA110ECA51BDB8436 /* MetadataAPI.swift */,
+				4D1A773F5FF0337299F8C9A3AEA4AE83 /* OffsetAPI.swift */,
+				E487443E421D14472878B59528B67780 /* OffsetCommitAPI.swift */,
+				D3642B4C6C0D27E6FA4C94412E293EB4 /* OffsetFetchAPI.swift */,
+				7F5C7DC4EBD2E981A3DC765AEC18FE4F /* OldConsumers.swift */,
+				EBF4C15CD9875104563ECA04881F0CDB /* Partition.swift */,
+				8C595F06B6F0DDFC6A8346913562974B /* ProduceAPI.swift */,
+				CEE5EC5793EA08780717B0E594428F62 /* Topic.swift */,
+				C0FD3E86772D9B25E1A3F843EC6315E4 /* Variables.swift */,
+				CEC96A5A8B08C542127332607BCE6209 /* Support Files */,
+			);
+			name = Franz;
+			path = Franz;
+			sourceTree = "<group>";
+		};
+		7A7768030085BD7D44627479E5EA840C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A0E0C0E240A57A9BDC40DD65853B271 /* Franz */,
+				15457AA68527002509E17B9D0942F6A8 /* KeychainSwift */,
+				4933941120DB8365F2DE6DC8474B30AD /* Moscapsule */,
+				7009A858510B17A186FFC113137650CC /* OpenSSL-Universal */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E3A0CF5D75793523B3E27AF1EEC110B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D65C9C567FF79A31D08A5A61943FAC5C /* KeychainSwift.modulemap */,
+				EB9982B7F03C225DE1707B05C949259E /* KeychainSwift-dummy.m */,
+				1603B0B6542AA2732447272DB248E606 /* KeychainSwift-Info.plist */,
+				5C955240735F7A9C79874E0B534D2740 /* KeychainSwift-prefix.pch */,
+				F3175A41A3334C6272F809F006CAEDF6 /* KeychainSwift-umbrella.h */,
+				C8D13211CF2C9475AAF7E7324408337B /* KeychainSwift.debug.xcconfig */,
+				9A3CE51DAEF694A33363D328458BBC4D /* KeychainSwift.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Moscapsule";
+			path = "../Target Support Files/KeychainSwift";
 			sourceTree = "<group>";
 		};
 		B591800895A9EDFAE5FE8096B8F0BEF2 /* Targets Support Files */ = {
@@ -344,88 +602,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BF5FF77842D40E558F0ACAACA1A448C2 /* OpenSSL-Universal */ = {
+		CEC96A5A8B08C542127332607BCE6209 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0CE6A64F08CA0F73384EAAA793727FC4 /* aes.h */,
-				5734AC9DC96CCE5A26456C57DED0AC0B /* asn1.h */,
-				48A1C2832DFA3CD71CB58F2C4F094B1D /* asn1_mac.h */,
-				744DDD4BA78184F70B1B914986396405 /* asn1t.h */,
-				BD4993EBDB76A6628F37292CBBA053B9 /* bio.h */,
-				B83FD0EA2965D1519A58AADCB7C6F898 /* blowfish.h */,
-				0778F2ACCB3CF1EED7784C41FE4BD9D5 /* bn.h */,
-				70FE9AD601E2538ABA3374589A6D3081 /* buffer.h */,
-				01A5561A033FC9B6025C1D726964F665 /* camellia.h */,
-				604031BDE615F8F4F39E6C06DB10DC23 /* cast.h */,
-				C791B8CF33F3F4A1AF119BD0C1D7C610 /* cmac.h */,
-				C2BC24F31FF616569B8679925BBB13DB /* cms.h */,
-				8B00D835A7443F92844541F7845D2E92 /* comp.h */,
-				F737E09BD56784B0179BC4F89DF28EFB /* conf.h */,
-				455D0877930C8B94549FB8C933D13139 /* conf_api.h */,
-				FF0C74943F1BEBAD965D32F25F0D1A22 /* crypto.h */,
-				4D5A719CD638CEC4C5BEE48C5BF6D545 /* des.h */,
-				8E07E9C06583813B12D112C7E39A5967 /* des_old.h */,
-				716A7FA8BC91E7180E7DCC541C470F65 /* dh.h */,
-				E8F962B121BBB87947F14E6FBB853B17 /* dsa.h */,
-				3B3EDEFBF0AC7DCCE8238EBFF7EAC8A6 /* dso.h */,
-				71BD85D63FCBAB3411A01CE0A8173BB6 /* dtls1.h */,
-				ACB0CEA9114B22B86561A032C5FEA75D /* e_os2.h */,
-				242BD9962F8BA0F5D44CD7EC1628DC8A /* ebcdic.h */,
-				1DE1B650B70CA98C55EF2CD9A234D23B /* ec.h */,
-				5551F8EF44D6900FB5C4788CCAFA8E29 /* ecdh.h */,
-				EDB7686812F2DA1667A5F8C69B017A16 /* ecdsa.h */,
-				7F5AD7DAF5B2280B24632B045D8A56C3 /* engine.h */,
-				A13B238EAE44B401C4D6BF961007D87F /* err.h */,
-				BB641D0FBFD3960003C7A383DFE1FDE2 /* evp.h */,
-				0CCA1BF3E73FE9CC7EC52E4151519E9C /* hmac.h */,
-				E1146887341D713C6BED1E0FFC5AFA9F /* idea.h */,
-				2FB631D5B66EE7E6E0E8F9B4F058216B /* krb5_asn.h */,
-				D5EE77A5BD6A0934C78A172B3BFB7F49 /* kssl.h */,
-				E98944B620FA59111AD699F26D5180C8 /* lhash.h */,
-				AD6580189BFFA79E3AF6C4C7BC641284 /* md4.h */,
-				F8731B26382B1541E60D430C3C8CBEA3 /* md5.h */,
-				EE26F229D988EB0774938A73B9AA547E /* mdc2.h */,
-				9AA3CE04700C6FE8A8F17CDCAE541B3C /* modes.h */,
-				A276A359E7ECE4CD4ADA858FF79E6D76 /* obj_mac.h */,
-				6858C7998D6CDA7D84B157F075795B39 /* objects.h */,
-				D7BFEC265B0693CEEF3062688A316CBA /* ocsp.h */,
-				D29B4C21CC33B149CC94B04961A8862F /* opensslconf.h */,
-				671681F8235016F45B53DD7E56BD13A2 /* opensslv.h */,
-				6CBE49D38E72BCCF9EB297184B0E4790 /* ossl_typ.h */,
-				174930C110F16E6933402A4D224C8B0B /* pem.h */,
-				5D246EEE6740339AADCD99C0DDF50C6B /* pem2.h */,
-				4DFCBEC7FC0AD2C3AA064DACBF3C5136 /* pkcs12.h */,
-				CA357E66EE62821C1A6973B6E8117203 /* pkcs7.h */,
-				CD47612714FCCD730271A330451A3243 /* pqueue.h */,
-				36FC9C8F6A08E166CDAB0515D98460EE /* rand.h */,
-				70BC6DB4CE5D114AA0540A10F0EE88B4 /* rc2.h */,
-				8074FEA495FF981DCBFE6D126CFFB18C /* rc4.h */,
-				0016FDECBC56318B868F84F94FFA8313 /* ripemd.h */,
-				48931BEFC1D4B1B26EAD528081165F8A /* rsa.h */,
-				5695D555A8F218A6C5462EDCD59053CF /* safestack.h */,
-				ACB8D76F0812C2901B8EC41891AD9B01 /* seed.h */,
-				940206969A8820DE42EAC337B22951DE /* sha.h */,
-				B05411C0ABF7F5CA4D0BA028AEC96C7B /* srp.h */,
-				7D6023CB979F0A052B611176A754C91F /* srtp.h */,
-				6EC75B9A989FEA2E905DB4F82709ED43 /* ssl.h */,
-				E1F4792D8185B071B2C055497875FD2E /* ssl2.h */,
-				CC194607C5972FCCAF4C4625B32A18A0 /* ssl23.h */,
-				C43A80EBDDECD429C3CDCCE71B4392A2 /* ssl3.h */,
-				F4F59F1160831D56D2DB9F22EEC148FA /* stack.h */,
-				E3D0A82DCBF5F8E0296E6A66B6FBD6FB /* symhacks.h */,
-				4C8B3FC7101B3DB34742C4A7E7E35CEE /* tls1.h */,
-				CC4D4D14E9FF37669278893A44304956 /* ts.h */,
-				40425275D54EC915FF3AB170E90793AD /* txt_db.h */,
-				779D40B070063969E17F5DB947CF54BF /* ui.h */,
-				12265AF77F8827F306C032BCCB2AC12A /* ui_compat.h */,
-				18F41B9F327B7BDBA2A22A85E741AEDB /* whrlpool.h */,
-				AADD721D5C7395E0E484AA535AAD051E /* x509.h */,
-				205C73DA4ECE484018622B5C260618B1 /* x509_vfy.h */,
-				937BCC3FA814429A4479A6CEE374450E /* x509v3.h */,
-				216DCC3CA05800FA8043DE5398274F18 /* Frameworks */,
-				456FF09FA76151FC6912BC0EF9C5BA2B /* Support Files */,
+				3888FB867AC36C56A933C55555C6BD0F /* Franz.modulemap */,
+				677E5633E89AA0F6301F53BEC18BAC29 /* Franz-dummy.m */,
+				0F881888DB96E11739F933EE85A9EF7F /* Franz-Info.plist */,
+				4153C73A2D8FBE5B5945B5FF4B34E4F0 /* Franz-prefix.pch */,
+				8472B1500C2CBD637F0E7078F47AC47A /* Franz-umbrella.h */,
+				538AFA6510D9CB044973A942A70DD617 /* Franz.debug.xcconfig */,
+				D9C4332FA0C9F7B6217AC984B0525382 /* Franz.release.xcconfig */,
 			);
-			path = "OpenSSL-Universal";
+			name = "Support Files";
+			path = "../Target Support Files/Franz";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -433,8 +622,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E8437159F59A53A575D84D18A6AEC8FB /* Pods */,
-				34E5C7BE3860641D8508252734EEDF21 /* Products */,
+				7A7768030085BD7D44627479E5EA840C /* Pods */,
+				11825EA7E9EC1C4EC0DE12320B5827CA /* Products */,
 				B591800895A9EDFAE5FE8096B8F0BEF2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -447,14 +636,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8437159F59A53A575D84D18A6AEC8FB /* Pods */ = {
+		E4840AD25909F5621958D9C629948D02 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				13E20668F91FF9573C400E8846CFCD5E /* KeychainSwift */,
-				FCE76F844F2F720FDFBA070E16D5AE1B /* Moscapsule */,
-				BF5FF77842D40E558F0ACAACA1A448C2 /* OpenSSL-Universal */,
+				E7CA17E6663253ED5709B0AD8603305C /* OpenSSL-Universal.debug.xcconfig */,
+				F0D305BF854DCD90A3B6A624FA1A1379 /* OpenSSL-Universal.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
 		FABA4C0D07771853B74CFB402774B184 /* Pods-MyChat */ = {
@@ -474,69 +663,25 @@
 			path = "Target Support Files/Pods-MyChat";
 			sourceTree = "<group>";
 		};
-		FCE76F844F2F720FDFBA070E16D5AE1B /* Moscapsule */ = {
-			isa = PBXGroup;
-			children = (
-				5D691F4A7EC5422E0BAD61F26F4A4A7C /* config.h */,
-				84534030DCD420AAFB2F49A2E2CC47EE /* dummypthread.h */,
-				63C4A90A16FD54A6178EF76A110765CA /* logging_mosq.c */,
-				E92448B0218792A834A011BDDBA8A8BC /* logging_mosq.h */,
-				3BFD709AC06D95BE0F259B1B370BBDE4 /* memory_mosq.c */,
-				0A63E7CDC823C0D81BD49EBE9578DF36 /* memory_mosq.h */,
-				1EA49A48DD4C40603049E101C0E2D896 /* messages_mosq.c */,
-				15A3887C62E9F7BDE407A2716A2FDBA5 /* messages_mosq.h */,
-				BA8D612445C4C1D4641A89DC3607C6CD /* Moscapsule.h */,
-				E3FF890633932DCF33B922A7D27FE35B /* Moscapsule.swift */,
-				4950FCA5E2B112C711AED4AC58ACB64F /* mosquitto.c */,
-				BF2FEB234FBB4A26AC80B2EC66B17CEE /* mosquitto.h */,
-				C01940B3C3BE612A53C37A14AF4B23DD /* mosquitto_internal.h */,
-				60469194BAAD19C9089CD1BA10FECE3C /* MosquittoCallbackBridge.h */,
-				67F33276626CD6A9FD78B2A2911863C7 /* MosquittoCallbackBridge.m */,
-				97038F1C7F2BEDF5B199F478A64BE57E /* mqtt3_protocol.h */,
-				32E7FC560D9B023486D637D67D59B684 /* net_mosq.c */,
-				F73F13D9776B8A60A77BF43556123DAC /* net_mosq.h */,
-				70CD6425B17EA285D89F44756ED8733B /* read_handle.c */,
-				E764B3880AA66CBD5D56E764424A1A4E /* read_handle.h */,
-				9381C5A24657D6592787C0CB83667DE4 /* read_handle_client.c */,
-				C7DFC70E1A63E95B9C68EE8090ADFCA8 /* read_handle_shared.c */,
-				6ED21708FC09D71F0D7AE98CC82CE4F6 /* send_client_mosq.c */,
-				B60625CE2FACC2624E724447009966D9 /* send_mosq.c */,
-				C6F390D5BF0C7340D3165E76854FA230 /* send_mosq.h */,
-				A7C5B37D27745D399DFB462383B8BECE /* socks_mosq.c */,
-				A501D2C40675F6D6DBD8AB83EA88AEC6 /* socks_mosq.h */,
-				3D9D62973B6C1B791BA3D6AB61A6F362 /* srv_mosq.c */,
-				9156D51EC95E7F2A3B38F3653EF49521 /* thread_mosq.c */,
-				3DAE4D6CB4BAA9EB7AED24CDEE183619 /* time_mosq.c */,
-				5C9820CF238FC66CCCD96C270F41AEE8 /* time_mosq.h */,
-				7B7BAE45F485BB318F9170252D477750 /* tls_mosq.c */,
-				C9B92FF8B2CCA0858D990B339A7A9D0C /* tls_mosq.h */,
-				6393D5135D58D28F4E71B8E821EA965C /* util_mosq.c */,
-				09493A62D514899C4CA9C2B9ECE8CD5F /* util_mosq.h */,
-				78B0989924B62698617C7227AD98AC4A /* will_mosq.c */,
-				797EEA2EFC4CE3B4773951DF7C695AD0 /* will_mosq.h */,
-				A410308F5FD672FD7F82986CDA6262BB /* Support Files */,
-			);
-			path = Moscapsule;
-			sourceTree = "<group>";
-		};
-		FFB15E5D748BD2D857321F34A3081A97 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				30156F73391DF623AE9B048B4776214D /* KeychainSwift.modulemap */,
-				BA642E8E89BD8E8AD8E3AD12D355D7D7 /* KeychainSwift-dummy.m */,
-				A79506F7900E5023D9144B46D6ADD6B1 /* KeychainSwift-Info.plist */,
-				0FE3A3E8CE619825F0FE7F22CE39247A /* KeychainSwift-prefix.pch */,
-				04C1B4D90E48C9946FAA141E5155D5CC /* KeychainSwift-umbrella.h */,
-				B63D3B3EFF21786F5FF23E42AB941992 /* KeychainSwift.debug.xcconfig */,
-				7DA0206FAE44F29F36D70BA937F496C8 /* KeychainSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KeychainSwift";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7AC7BA3BF80B00E7031FC533F34E7600 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849218E3D37AC919202DA63B9B0C8533 /* Pods-MyChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B2B584D250E952737136B23DCF83EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279D098D13FA6B2F90F1CF76EF199852 /* Franz-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,14 +713,6 @@
 				5C1DD4A16E7846E8F6B81B6BB522B2B9 /* tls_mosq.h in Headers */,
 				3167AE879DCB478DF1C0C7928941A70F /* util_mosq.h in Headers */,
 				F007C949218C14EFD10AA6D6A7BEEBC9 /* will_mosq.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0EC27670ABF5A5BD3B2140E32B4D6F9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				714AAC9AC35ABDB28320F182AE2C1582 /* Pods-MyChat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,23 +757,42 @@
 		};
 		8F7CE5E3F75A1091B24E684CF40D8F0E /* Pods-MyChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07FE60E8FDF8AB6B37E1ACE229CFC72D /* Build configuration list for PBXNativeTarget "Pods-MyChat" */;
+			buildConfigurationList = 2E0F4BE83F656DCD77F431E5DA99FE66 /* Build configuration list for PBXNativeTarget "Pods-MyChat" */;
 			buildPhases = (
-				C0EC27670ABF5A5BD3B2140E32B4D6F9 /* Headers */,
-				55C6F6CE6BD34B326862F0D240D112D2 /* Sources */,
-				88F0BA044BABC13F4989CEC4A26811AF /* Frameworks */,
-				F4FBBEBF4AF1C6476B3CDC6AB24F59D4 /* Resources */,
+				7AC7BA3BF80B00E7031FC533F34E7600 /* Headers */,
+				65DEB30187516042FE1D78D79B9C4DAE /* Sources */,
+				61D178F3CDC3063BCA39FB442936B557 /* Frameworks */,
+				C4678F62E38BF6881BC40C836CDBAC4E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD1B7A749766DEB41A6522DF47EC2E0C /* PBXTargetDependency */,
-				4B99BF44EA55FF248ED42A7711A6C05A /* PBXTargetDependency */,
-				CD23055E29199507A584D2535421FDAB /* PBXTargetDependency */,
+				B11701C8553CC1B60ED7973A58A3903B /* PBXTargetDependency */,
+				E82A9676480E0C2A38A4E47377EFA9FE /* PBXTargetDependency */,
+				A2456BDBC9C996BADA04415196A6C8DB /* PBXTargetDependency */,
+				572518E04E5B97BFE06CCC35706B7907 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyChat";
 			productName = "Pods-MyChat";
 			productReference = 7B04ECBE01AEF250A270B8FDADE9CC0E /* Pods_MyChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D50DA77E856AF6251EA939F9EFB1C0AA /* Franz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E5FA3E014E58958E0CD436BFDD7B65 /* Build configuration list for PBXNativeTarget "Franz" */;
+			buildPhases = (
+				86B2B584D250E952737136B23DCF83EA /* Headers */,
+				EF23301B9BD7D52FAE1253E0026EE194 /* Sources */,
+				943DB1DA937B64A91CD5AC55F65D5E0D /* Frameworks */,
+				8F55CBCD31A2BAA9F7460CE25547EB75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Franz;
+			productName = Franz;
+			productReference = 28F0C76435932CAC868315281605E78F /* Franz.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -646,12 +802,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					877821A96E45797927C7853AA433B5B8 = {
-						LastSwiftMigration = 1240;
-					};
-				};
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -662,10 +813,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 34E5C7BE3860641D8508252734EEDF21 /* Products */;
+			productRefGroup = 11825EA7E9EC1C4EC0DE12320B5827CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D50DA77E856AF6251EA939F9EFB1C0AA /* Franz */,
 				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
 				877821A96E45797927C7853AA433B5B8 /* Moscapsule */,
 				B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */,
@@ -689,7 +841,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4FBBEBF4AF1C6476B3CDC6AB24F59D4 /* Resources */ = {
+		8F55CBCD31A2BAA9F7460CE25547EB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4678F62E38BF6881BC40C836CDBAC4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -699,11 +858,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		55C6F6CE6BD34B326862F0D240D112D2 /* Sources */ = {
+		65DEB30187516042FE1D78D79B9C4DAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F1B0608DE7D85B51CE6B11972E1066 /* Pods-MyChat-dummy.m in Sources */,
+				00002218239DA89866D05F5F3F40E0CD /* Pods-MyChat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,43 +904,226 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF23301B9BD7D52FAE1253E0026EE194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5884E4E4790FE77ECB23FBE24280B921 /* AdminAPI.swift in Sources */,
+				DC6FC25845A3A830DB7BC5EAA245CBE0 /* Assignment.swift in Sources */,
+				6CBAE0E265732B0AF63DAC4845BDB0B8 /* Broker.swift in Sources */,
+				3E3D97379FE2D6E1C32764D29C90291A /* Cluster.swift in Sources */,
+				A016E2338BAFA59FDC6815BD8D8F8679 /* Connection.swift in Sources */,
+				FA638FBD86E687ACB6E19212B838BC3E /* Consumer.swift in Sources */,
+				B63F931A9C2B318721C46EBEE0BED221 /* CRC32.swift in Sources */,
+				8DE4E1E8A52F082CB3703B0F89B78831 /* Enumerations.swift in Sources */,
+				6EF436879231D431E5BAD52E50EABA5D /* FetchAPI.swift in Sources */,
+				C4AC7059A3732A9F10CAB3F0D8CFBA70 /* Franz-dummy.m in Sources */,
+				4595D86565B3DC0149352D3A34C395B7 /* Group.swift in Sources */,
+				AD24268C1E41E926087FD6281209E48F /* GroupCoordinatorAPI.swift in Sources */,
+				A70180E1A400697136A46E71BC2D3A50 /* GroupMembershipAPI.swift in Sources */,
+				AA00463B87E35BC5A0FA095BF76E182C /* KafkaProtocol.swift in Sources */,
+				5E9F2D00207A02B3FBD7AD56401030BD /* KafkaRequest.swift in Sources */,
+				34F56C2C91C7B752EE0DB191E7AC522E /* KafkaResponse.swift in Sources */,
+				F3621326582FBB84C22CC5C1B64A84C0 /* MessageSet.swift in Sources */,
+				F31D58CE5CBB5E0B4D34AE257CE8B3D2 /* MetadataAPI.swift in Sources */,
+				A51D8BD783CD0821B435D68C0721791D /* OffsetAPI.swift in Sources */,
+				2FE45FE903E4ADCC1D038E33896244AE /* OffsetCommitAPI.swift in Sources */,
+				7F7920885873ACA95A6EDE873AB78DDE /* OffsetFetchAPI.swift in Sources */,
+				377484E6FED1B350EC457E079E8402B6 /* OldConsumers.swift in Sources */,
+				7F118920A5CE15B987C319C8619DB059 /* Partition.swift in Sources */,
+				6D63000C39059C789C5C5732F3425038 /* ProduceAPI.swift in Sources */,
+				51960EA57257DA052FEF623902C4056A /* Topic.swift in Sources */,
+				F30E366BB887A579C23CC2AEE58BDAF8 /* Variables.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B99BF44EA55FF248ED42A7711A6C05A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Moscapsule;
-			target = 877821A96E45797927C7853AA433B5B8 /* Moscapsule */;
-			targetProxy = 9A9C08481B01303B12B7812F6BD2FEFA /* PBXContainerItemProxy */;
-		};
-		AD1B7A749766DEB41A6522DF47EC2E0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KeychainSwift;
-			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
-			targetProxy = 5DFF0C245E8A81145C4461CDB8944B39 /* PBXContainerItemProxy */;
-		};
-		CD23055E29199507A584D2535421FDAB /* PBXTargetDependency */ = {
+		572518E04E5B97BFE06CCC35706B7907 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OpenSSL-Universal";
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = B23CBD3BC98D0EA60B18D1F054A8E0B0 /* PBXContainerItemProxy */;
+			targetProxy = 2FCE9E1BA68D4E7283C91B6AD7509911 /* PBXContainerItemProxy */;
+		};
+		A2456BDBC9C996BADA04415196A6C8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moscapsule;
+			target = 877821A96E45797927C7853AA433B5B8 /* Moscapsule */;
+			targetProxy = F425AFC85BDD2D6E2C03AE768E42CBED /* PBXContainerItemProxy */;
+		};
+		B11701C8553CC1B60ED7973A58A3903B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Franz;
+			target = D50DA77E856AF6251EA939F9EFB1C0AA /* Franz */;
+			targetProxy = 4406D3DB8C7E18984F574B9DF6218309 /* PBXContainerItemProxy */;
+		};
+		E82A9676480E0C2A38A4E47377EFA9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = 8E37F35FEFD62A3BD9DC45402968EFD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11D5DD59C821CAF83E519D9F1D28639F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F3BC9A98FB5FF7B647ADFC6AE73CA98 /* OpenSSL-Universal.debug.xcconfig */;
+			baseConfigurationReference = E7CA17E6663253ED5709B0AD8603305C /* OpenSSL-Universal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23835D0EF379B3559A731E4265FA6982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33364619BE1FFEA257B6B5DC6AE5211 /* Pods-MyChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23D9164C29E3C81A5E96756243DC8935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C4332FA0C9F7B6217AC984B0525382 /* Franz.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Franz/Franz-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Franz/Franz-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Franz/Franz.modulemap";
+				PRODUCT_MODULE_NAME = Franz;
+				PRODUCT_NAME = Franz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E18EC429C2833F8F4EC25BB88B71AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA4570F39F0D4F0FDEC41EBC7D482FF /* Pods-MyChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		494807DA9BED67D500379D7EDD47E8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538AFA6510D9CB044973A942A70DD617 /* Franz.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Franz/Franz-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Franz/Franz-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Franz/Franz.modulemap";
+				PRODUCT_MODULE_NAME = Franz;
+				PRODUCT_NAME = Franz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -853,7 +1195,7 @@
 		};
 		593E0D9A581ECC7BB34AAD38EBF4854E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DA0206FAE44F29F36D70BA937F496C8 /* KeychainSwift.release.xcconfig */;
+			baseConfigurationReference = 9A3CE51DAEF694A33363D328458BBC4D /* KeychainSwift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -866,7 +1208,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -877,7 +1219,6 @@
 				PRODUCT_NAME = KeychainSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -889,7 +1230,7 @@
 		};
 		63051A5E9DE504F4E38528B4E55996DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63D3B3EFF21786F5FF23E42AB941992 /* KeychainSwift.debug.xcconfig */;
+			baseConfigurationReference = C8D13211CF2C9475AAF7E7324408337B /* KeychainSwift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -902,7 +1243,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -913,7 +1254,6 @@
 				PRODUCT_NAME = KeychainSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -922,48 +1262,9 @@
 			};
 			name = Debug;
 		};
-		6CD143E466D8F08ABF42AD0B390F7DE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAA4570F39F0D4F0FDEC41EBC7D482FF /* Pods-MyChat.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		841BC804E6DA6764A16DD696E8CC6EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAB15272DF3C70C47891001D25295CFE /* Moscapsule.debug.xcconfig */;
+			baseConfigurationReference = 8A01E83E7F838B7E7F4F827FF3ED07B7 /* Moscapsule.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -976,7 +1277,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Moscapsule/Moscapsule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Moscapsule/Moscapsule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,9 +1288,7 @@
 				PRODUCT_NAME = Moscapsule;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1060,7 +1359,7 @@
 		};
 		98D76A6621F7C4326508FDB16ABCBED5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB6D32F80A9FEC982448B25462B94EAE /* Moscapsule.release.xcconfig */;
+			baseConfigurationReference = 3CE63D89B3FF3CB4A2CD0887B38FB9E3 /* Moscapsule.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1073,7 +1372,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Moscapsule/Moscapsule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Moscapsule/Moscapsule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1084,9 +1383,7 @@
 				PRODUCT_NAME = Moscapsule;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1096,11 +1393,11 @@
 		};
 		A56A33601CE9B3BFBC7F5B802E79FC08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF32D16DDE82138CBB33C137C9DB6C0A /* OpenSSL-Universal.release.xcconfig */;
+			baseConfigurationReference = F0D305BF854DCD90A3B6A624FA1A1379 /* OpenSSL-Universal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1111,52 +1408,14 @@
 			};
 			name = Release;
 		};
-		EF30DD16659EFBAB0F5C7D42B734AC21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E33364619BE1FFEA257B6B5DC6AE5211 /* Pods-MyChat.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyChat/Pods-MyChat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07FE60E8FDF8AB6B37E1ACE229CFC72D /* Build configuration list for PBXNativeTarget "Pods-MyChat" */ = {
+		2E0F4BE83F656DCD77F431E5DA99FE66 /* Build configuration list for PBXNativeTarget "Pods-MyChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF30DD16659EFBAB0F5C7D42B734AC21 /* Debug */,
-				6CD143E466D8F08ABF42AD0B390F7DE7 /* Release */,
+				23835D0EF379B3559A731E4265FA6982 /* Debug */,
+				3E18EC429C2833F8F4EC25BB88B71AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1193,6 +1452,15 @@
 			buildConfigurations = (
 				63051A5E9DE504F4E38528B4E55996DA /* Debug */,
 				593E0D9A581ECC7BB34AAD38EBF4854E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E5FA3E014E58958E0CD436BFDD7B65 /* Build configuration list for PBXNativeTarget "Franz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494807DA9BED67D500379D7EDD47E8FE /* Debug */,
+				23D9164C29E3C81A5E96756243DC8935 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

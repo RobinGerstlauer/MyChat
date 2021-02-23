@@ -19,14 +19,12 @@ struct ContentView: View {
                         Image(systemName: "message.fill")
                         Text("Chat")
                     }
-                    .edgesIgnoringSafeArea(.all)
-                    
                 MyIdView()
                     .tabItem {
                         Image(systemName: "person.fill")
                         Text("My ID")
                 }
-            }.edgesIgnoringSafeArea(.all)
+            }
         
         
     
